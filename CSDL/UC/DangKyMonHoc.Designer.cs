@@ -51,6 +51,8 @@
             this.txtMaLop = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.label16 = new System.Windows.Forms.Label();
+            this.cbbNamHoc = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -66,8 +68,6 @@
             this.txtKhoaHoc = new System.Windows.Forms.TextBox();
             this.txtHeSoMG = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.cbbNamHoc = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.colSTT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colMonHoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -130,14 +130,8 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel3.Controls.Add(this.label7, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.label8, 0, 1);
-            this.tableLayoutPanel3.Controls.Add(this.label9, 0, 2);
             this.tableLayoutPanel3.Controls.Add(this.label10, 2, 0);
             this.tableLayoutPanel3.Controls.Add(this.txtTenMH, 3, 0);
-            this.tableLayoutPanel3.Controls.Add(this.cbbMonHoc, 1, 0);
-            this.tableLayoutPanel3.Controls.Add(this.cbbGV, 1, 1);
-            this.tableLayoutPanel3.Controls.Add(this.cbbHocKy, 1, 2);
             this.tableLayoutPanel3.Controls.Add(this.label11, 2, 1);
             this.tableLayoutPanel3.Controls.Add(this.label12, 2, 2);
             this.tableLayoutPanel3.Controls.Add(this.label13, 2, 3);
@@ -150,8 +144,14 @@
             this.tableLayoutPanel3.Controls.Add(this.txtMaLop, 3, 5);
             this.tableLayoutPanel3.Controls.Add(this.button2, 1, 4);
             this.tableLayoutPanel3.Controls.Add(this.button1, 0, 4);
-            this.tableLayoutPanel3.Controls.Add(this.label16, 0, 3);
-            this.tableLayoutPanel3.Controls.Add(this.cbbNamHoc, 1, 3);
+            this.tableLayoutPanel3.Controls.Add(this.label16, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.cbbNamHoc, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.label9, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.cbbHocKy, 1, 1);
+            this.tableLayoutPanel3.Controls.Add(this.label8, 0, 3);
+            this.tableLayoutPanel3.Controls.Add(this.label7, 0, 2);
+            this.tableLayoutPanel3.Controls.Add(this.cbbGV, 1, 3);
+            this.tableLayoutPanel3.Controls.Add(this.cbbMonHoc, 1, 2);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(4, 19);
             this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4);
@@ -170,7 +170,7 @@
             // 
             this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(4, 6);
+            this.label7.Location = new System.Drawing.Point(4, 64);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(171, 17);
@@ -181,7 +181,7 @@
             // 
             this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(4, 35);
+            this.label8.Location = new System.Drawing.Point(4, 93);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(171, 17);
@@ -192,7 +192,7 @@
             // 
             this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(4, 64);
+            this.label9.Location = new System.Drawing.Point(4, 35);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(171, 17);
@@ -224,7 +224,7 @@
             // 
             this.cbbMonHoc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.cbbMonHoc.FormattingEnabled = true;
-            this.cbbMonHoc.Location = new System.Drawing.Point(183, 4);
+            this.cbbMonHoc.Location = new System.Drawing.Point(183, 62);
             this.cbbMonHoc.Margin = new System.Windows.Forms.Padding(4);
             this.cbbMonHoc.Name = "cbbMonHoc";
             this.cbbMonHoc.Size = new System.Drawing.Size(171, 24);
@@ -234,7 +234,7 @@
             // 
             this.cbbGV.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.cbbGV.FormattingEnabled = true;
-            this.cbbGV.Location = new System.Drawing.Point(183, 33);
+            this.cbbGV.Location = new System.Drawing.Point(183, 91);
             this.cbbGV.Margin = new System.Windows.Forms.Padding(4);
             this.cbbGV.Name = "cbbGV";
             this.cbbGV.Size = new System.Drawing.Size(171, 24);
@@ -244,7 +244,11 @@
             // 
             this.cbbHocKy.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.cbbHocKy.FormattingEnabled = true;
-            this.cbbHocKy.Location = new System.Drawing.Point(183, 62);
+            this.cbbHocKy.Items.AddRange(new object[] {
+            "HK1",
+            "HK2",
+            "HKP"});
+            this.cbbHocKy.Location = new System.Drawing.Point(183, 33);
             this.cbbHocKy.Margin = new System.Windows.Forms.Padding(4);
             this.cbbHocKy.Name = "cbbHocKy";
             this.cbbHocKy.Size = new System.Drawing.Size(171, 24);
@@ -374,6 +378,27 @@
             this.button1.TabIndex = 3;
             this.button1.Text = "Đăng ký";
             this.button1.UseVisualStyleBackColor = true;
+            // 
+            // label16
+            // 
+            this.label16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(4, 6);
+            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(171, 17);
+            this.label16.TabIndex = 5;
+            this.label16.Text = "Chọn năm học";
+            // 
+            // cbbNamHoc
+            // 
+            this.cbbNamHoc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbbNamHoc.FormattingEnabled = true;
+            this.cbbNamHoc.Location = new System.Drawing.Point(183, 4);
+            this.cbbNamHoc.Margin = new System.Windows.Forms.Padding(4);
+            this.cbbNamHoc.Name = "cbbNamHoc";
+            this.cbbNamHoc.Size = new System.Drawing.Size(171, 24);
+            this.cbbNamHoc.TabIndex = 6;
             // 
             // label1
             // 
@@ -560,27 +585,6 @@
             this.groupBox3.TabIndex = 4;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Danh sách đã đăng ký";
-            // 
-            // label16
-            // 
-            this.label16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(4, 93);
-            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(171, 17);
-            this.label16.TabIndex = 5;
-            this.label16.Text = "Chọn năm học";
-            // 
-            // cbbNamHoc
-            // 
-            this.cbbNamHoc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbbNamHoc.FormattingEnabled = true;
-            this.cbbNamHoc.Location = new System.Drawing.Point(183, 91);
-            this.cbbNamHoc.Margin = new System.Windows.Forms.Padding(4);
-            this.cbbNamHoc.Name = "cbbNamHoc";
-            this.cbbNamHoc.Size = new System.Drawing.Size(171, 24);
-            this.cbbNamHoc.TabIndex = 6;
             // 
             // dataGridView1
             // 
