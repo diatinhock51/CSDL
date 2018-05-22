@@ -12,12 +12,20 @@ namespace CSDL.UC
 {
     public partial class QuanLy : UserControl
     {
+
         public QuanLy()
         {
             InitializeComponent();
-            var dataTable = Models.LopHocPhan.getTableLopHocPhan();
-            dgvLHP.DataSource = dataTable;
-            //var dataTable = Models.LopHocPhan.getTableLopHocPhan();
+            Phuong();
+            
+            var dataTable = Models.SinhVien.getTableSinhVien();
+            dgvSV.DataSource = dataTable;
+
         }
+
+        //private void btnThem_Click(object sender, EventArgs e)
+        //{
+
+        //}
     }
 }

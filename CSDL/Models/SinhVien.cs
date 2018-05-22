@@ -211,7 +211,7 @@ namespace CSDL.Models
         public static DataTable getTableSinhVien()
         {
             //Gọi thủ tục getSinhVien
-            return Models.connection.getData("spgetSinhVien", CommandType.StoredProcedure);            
+            return Models.connection.getData("spgetTableSinhVien", CommandType.StoredProcedure);            
         }
         //public static DataTable getTables
 
