@@ -11,13 +11,13 @@ namespace CSDL.Models
     {
         string maSV;
         string ten;
-        DateTime ngaySinh;
+        string ngaySinh;
         string diaChi;
         string gioiTinh;
         string email;
         string khoaHoc;
         string matKhau;
-        string maLHP;
+        string maLQL;
         string maDT;
         #region Field
         public string MaSV
@@ -111,7 +111,7 @@ namespace CSDL.Models
             }
         }
 
-        public DateTime NgaySinh
+        public string NgaySinh
         {
             get
             {
@@ -137,20 +137,20 @@ namespace CSDL.Models
             }
         }
 
-        public string MaLHP
+        public string MaLQL
         {
             get
             {
-                return maLHP;
+                return maLQL;
             }
 
             set
             {
-                maLHP = value;
+                maLQL = value;
             }
         }
         #endregion
-        public SinhVien(string _maSV, string _ten, DateTime _ngaySinh,
+        public SinhVien(string _maSV, string _ten, string _ngaySinh,
             string _diaChi, string _gioiTinh, string _email, string _khoaHoc,
             string _matKhau, string _maLHP, string _maDT)
         {
@@ -162,22 +162,20 @@ namespace CSDL.Models
             email = _email;
             khoaHoc = _khoaHoc;
             matKhau = _matKhau;
-            maLHP = _maLHP;
+            maLQL = _maLHP;
             maDT = _maDT;
         }
         public SinhVien(string[] data)
         {
-            //DateTime.f
             maSV = data[0];
             ten = data[1];
-            ngaySinh = DateTime.ParseExact(data[2], "yy/MM/dd h:mm:ss tt", 
-            System.Globalization.CultureInfo.InvariantCulture); 
+            ngaySinh= data[2];
             diaChi = data[3];
             gioiTinh = data[4];
             email = data[5];
             khoaHoc = data[6];
             matKhau = data[7];
-            maLHP = data[8];
+            maLQL = data[8];
             maDT = data[9];
         }
         public int InsertSinhVien()
@@ -185,7 +183,7 @@ namespace CSDL.Models
             string[] paras = new string[10] { "@MASV", "@TENSV", "@NGAYSINH",
                 "@GIOITINH", "@DIACHI", "@EMAIL", "@KHOAHOC", "@MATKHAU", "@MALHP", "@MADT"};
             object[] values = new object[10] { maSV, ten, ngaySinh, gioiTinh,
-                diaChi, email, khoaHoc, matKhau, maLHP, maDT };
+                diaChi, email, khoaHoc, matKhau, maLQL, maDT };
             var i = Models.connection.ExcuteQuery("spInsertSinhVien", 
                 CommandType.StoredProcedure, paras, values);
             return i;
@@ -195,7 +193,7 @@ namespace CSDL.Models
             string[] paras = new string[10] { "@MASV", "@TENSV", "@NGAYSINH",
                 "@GIOITINH", "@DIACHI", "@EMAIL", "@KHOAHOC", "@MATKHAU", "@MALHP", "@MADT"};
             object[] values = new object[10] { maSV, ten, ngaySinh, gioiTinh,
-                diaChi, email, khoaHoc, matKhau, maLHP, maDT };
+                diaChi, email, khoaHoc, matKhau, maLQL, maDT };
             var i = Models.connection.ExcuteQuery("spUpdateSinhVien", 
                 CommandType.StoredProcedure, paras, values);
             return i;
@@ -218,7 +216,7 @@ namespace CSDL.Models
         public static SinhVien getSinhVien(string maSV)
         {
             DataTable dt = new DataTable();
-            dt = Models.connection.getData("spgetSinhVienByMaSV", CommandType.StoredProcedure, 
+            dt = Models.connection.getData("spgetSinhVien", CommandType.StoredProcedure, 
                 new string[1] { "@MASV" }, new object[1] { maSV });
             var obj = dt.Rows[0].ItemArray;
             var data= obj.Where(x => x != null)

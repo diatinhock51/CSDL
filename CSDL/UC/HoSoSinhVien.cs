@@ -15,6 +15,7 @@ namespace CSDL.UC
         public HoSoSinhVien()
         {
             InitializeComponent();
+            Models.SinhVien sv = Models.SinhVien.getSinhVien("SV0001");
         }
     }
 }

@@ -11,7 +11,7 @@ namespace CSDL.Models
     {
         string maHD;
         string tenHD;
-        DateTime ngayThu;
+        string ngayThu;
         int tongSoTien;
         string maSV;
         string maNV;
@@ -42,7 +42,7 @@ namespace CSDL.Models
             }
         }
 
-        public DateTime NgayThu
+        public string NgayThu
         {
             get
             {
@@ -94,7 +94,7 @@ namespace CSDL.Models
             }
         }
         #endregion
-        public HoaDon(string _maHD, string _tenHD, DateTime _ngayThu,
+        public HoaDon(string _maHD, string _tenHD, string _ngayThu,
            int _tongSoTien, string _maSV, string _maNV)
         {
             maHD = _maHD;
@@ -108,8 +108,7 @@ namespace CSDL.Models
         {
             maHD = data[0];
             tenHD = data[1];
-            ngayThu = DateTime.ParseExact(data[2], "yy/MM/dd h:mm:ss tt",
-            System.Globalization.CultureInfo.InvariantCulture);
+            ngayThu = data[2];
             tongSoTien = Convert.ToInt32( data[3]);
             maSV = data[4];
             maNV = data[5];
