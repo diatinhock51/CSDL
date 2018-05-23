@@ -11,7 +11,7 @@ namespace CSDL.Models
 {
     class connection
     {
-        public static string connStr = "Server=(local);database=CSDL;Integrated Security=True";
+        public static string connStr = @"Data Source=(local);Initial Catalog=CSDL;Integrated Security=True";
         public static SqlConnection Getconnection()
         {
             SqlConnection con = new SqlConnection(connStr);

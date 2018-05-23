@@ -161,5 +161,19 @@ namespace CSDL.Models
                        .ToArray();
             return new LopHocPhan(data);
         }
+        public static DataTable getTenLHP(string loaiHK)
+        {
+            DataTable dt = new DataTable();
+            dt = Models.connection.getData("spgetTenLHP", CommandType.StoredProcedure,
+                new string[1] { "@LOAIHK" }, new object[1] { loaiHK });
+            return dt;
+        }
+        public static DataTable getTenGV(string loaiHK, string tenMH)
+        {
+            DataTable dt = new DataTable();
+            dt = Models.connection.getData("spgetTenGV", CommandType.StoredProcedure,
+                new string[2] { "@LOAIHK", "@TENHP" }, new object[2] { loaiHK, tenMH });
+            return dt;
+        }
     }
 }
