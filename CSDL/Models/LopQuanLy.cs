@@ -9,33 +9,33 @@ namespace CSDL.Models
 {
     class LopQuanLy
     {
-        string maLHP;
-        string tenLHP;
+        string maLQL;
+        string tenLQL;
         string khoa;
         #region Field
-        public string MaLHP
+        public string MaLQL
         {
             get
             {
-                return maLHP;
+                return maLQL;
             }
 
             set
             {
-                maLHP = value;
+                maLQL = value;
             }
         }
 
-        public string TenLHP
+        public string TenLQL
         {
             get
             {
-                return tenLHP;
+                return tenLQL;
             }
 
             set
             {
-                tenLHP = value;
+                tenLQL = value;
             }
         }
 
@@ -53,31 +53,31 @@ namespace CSDL.Models
         }
 
         #endregion
-        public LopQuanLy(string _maLHP, string _tenLHP, string _khoa)
+        public LopQuanLy(string _maLQL, string _tenLQL, string _khoa)
         {
-            maLHP = _maLHP;
-            tenLHP = _tenLHP;
+            maLQL = _maLQL;
+            tenLQL = _tenLQL;
             khoa = _khoa;
         }
         public LopQuanLy(string[] data)
         {
             //DateTime.f
-            maLHP = data[0];
-            tenLHP = data[1];
+            maLQL = data[0];
+            tenLQL = data[1];
             khoa = data[2];
         }
         public int InsertLopQuanLy()
         {
-            string[] paras = new string[3] { "@MALHP", "@TENLHP", "@KHOA"};
-            object[] values = new object[3] { maLHP, tenLHP, khoa };
+            string[] paras = new string[3] { "@MALQL", "@TENLQL", "@KHOA"};
+            object[] values = new object[3] { maLQL, tenLQL, khoa };
             var i = Models.connection.ExcuteQuery("spInsertLopQuanLy",
                 CommandType.StoredProcedure, paras, values);
             return i;
         }
         public int UpdateLopQuanLy()
         {
-            string[] paras = new string[3] { "@MALHP", "@TENLHP", "@KHOA" };
-            object[] values = new object[3] { maLHP, tenLHP, khoa };
+            string[] paras = new string[3] { "@MALQL", "@TENLQL", "@KHOA" };
+            object[] values = new object[3] { maLQL, tenLQL, khoa };
             var i = Models.connection.ExcuteQuery("spUpdateLopQuanLy",
                 CommandType.StoredProcedure, paras, values);
             return i;
@@ -86,7 +86,7 @@ namespace CSDL.Models
         public int DeleteLopQuanLy()
         {
             var i = Models.connection.ExcuteQuery("spDeleteLopQuanLy",
-                CommandType.StoredProcedure, new string[1] { "@MALHP" }, new object[1] { maLHP });
+                CommandType.StoredProcedure, new string[1] { "@MALQL" }, new object[1] { maLQL });
             return i;
         }
 
@@ -97,11 +97,11 @@ namespace CSDL.Models
         }
         //public static DataTable getTables
 
-        public static LopQuanLy getLopQuanLy(string maLHP)
+        public static LopQuanLy getLopQuanLy(string maLQL)
         {
             DataTable dt = new DataTable();
             dt = Models.connection.getData("spgetLopQuanLy", CommandType.StoredProcedure,
-                new string[1] { "@MaLHP" }, new object[1] { maLHP });
+                new string[1] { "@MaLQL" }, new object[1] { maLQL });
             var obj = dt.Rows[0].ItemArray;
             var data = obj.Where(x => x != null)
                        .Select(x => x.ToString())

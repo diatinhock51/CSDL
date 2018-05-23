@@ -51,6 +51,8 @@
             this.txtMaLop = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.label16 = new System.Windows.Forms.Label();
+            this.cbbNamHoc = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -66,8 +68,6 @@
             this.txtKhoaHoc = new System.Windows.Forms.TextBox();
             this.txtHeSoMG = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.cbbNamHoc = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.colSTT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colMonHoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -375,6 +375,27 @@
             this.button1.Text = "Đăng ký";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // label16
+            // 
+            this.label16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(4, 93);
+            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(171, 17);
+            this.label16.TabIndex = 5;
+            this.label16.Text = "Chọn năm học";
+            // 
+            // cbbNamHoc
+            // 
+            this.cbbNamHoc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbbNamHoc.FormattingEnabled = true;
+            this.cbbNamHoc.Location = new System.Drawing.Point(183, 91);
+            this.cbbNamHoc.Margin = new System.Windows.Forms.Padding(4);
+            this.cbbNamHoc.Name = "cbbNamHoc";
+            this.cbbNamHoc.Size = new System.Drawing.Size(171, 24);
+            this.cbbNamHoc.TabIndex = 6;
+            // 
             // label1
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
@@ -560,27 +581,6 @@
             this.groupBox3.TabIndex = 4;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Danh sách đã đăng ký";
-            // 
-            // label16
-            // 
-            this.label16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(4, 93);
-            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(171, 17);
-            this.label16.TabIndex = 5;
-            this.label16.Text = "Chọn năm học";
-            // 
-            // cbbNamHoc
-            // 
-            this.cbbNamHoc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbbNamHoc.FormattingEnabled = true;
-            this.cbbNamHoc.Location = new System.Drawing.Point(183, 91);
-            this.cbbNamHoc.Margin = new System.Windows.Forms.Padding(4);
-            this.cbbNamHoc.Name = "cbbNamHoc";
-            this.cbbNamHoc.Size = new System.Drawing.Size(171, 24);
-            this.cbbNamHoc.TabIndex = 6;
             // 
             // dataGridView1
             // 

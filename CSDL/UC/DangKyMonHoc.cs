@@ -14,17 +14,20 @@ namespace CSDL.UC
     {
         string maSV;
         Models.SinhVien mySV;
+        Models.LopQuanLy myLQL;
         public DangKyMonHoc(string _maSV)
         {
             InitializeComponent();
             maSV = _maSV;
             mySV = Models.SinhVien.getSinhVien(maSV);
+            myLQL = Models.LopQuanLy.getLopQuanLy(mySV.MaLQL);
             showInfo();
         }
         void showInfo()
         {
             txtHoTen.Text = mySV.Ten;
-            txtKhoa.Text = mySV.KhoaHoc;
+            txtKhoa.Text = myLQL.Khoa;
+            txtLop.Text = myLQL.TenLQL;
             txtKhoaHoc.Text = mySV.KhoaHoc;
             txtHeSoMG.Text = mySV.MaDT;
         }

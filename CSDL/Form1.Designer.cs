@@ -35,11 +35,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.btnInfoApp = new System.Windows.Forms.Button();
             this.btn3 = new System.Windows.Forms.Button();
             this.btnThongKe = new System.Windows.Forms.Button();
             this.btnQuanLy = new System.Windows.Forms.Button();
             this.btnThuPhi = new System.Windows.Forms.Button();
-            this.btnInfoApp = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbOff)).BeginInit();
@@ -132,6 +132,22 @@
             this.splitContainer1.SplitterDistance = 149;
             this.splitContainer1.TabIndex = 1;
             // 
+            // btnInfoApp
+            // 
+            this.btnInfoApp.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnInfoApp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInfoApp.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInfoApp.ForeColor = System.Drawing.Color.White;
+            this.btnInfoApp.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnInfoApp.Location = new System.Drawing.Point(0, 211);
+            this.btnInfoApp.Name = "btnInfoApp";
+            this.btnInfoApp.Size = new System.Drawing.Size(159, 54);
+            this.btnInfoApp.TabIndex = 0;
+            this.btnInfoApp.Text = "Thông tin phần mềm";
+            this.btnInfoApp.UseVisualStyleBackColor = true;
+            this.btnInfoApp.Click += new System.EventHandler(this.buttonX_Click);
+            // 
             // btn3
             // 
             this.btn3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -200,22 +216,6 @@
             this.btnThuPhi.Text = "Thu phí";
             this.btnThuPhi.UseVisualStyleBackColor = true;
             this.btnThuPhi.Click += new System.EventHandler(this.buttonX_Click);
-            // 
-            // btnInfoApp
-            // 
-            this.btnInfoApp.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnInfoApp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInfoApp.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInfoApp.ForeColor = System.Drawing.Color.White;
-            this.btnInfoApp.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInfoApp.Location = new System.Drawing.Point(0, 211);
-            this.btnInfoApp.Name = "btnInfoApp";
-            this.btnInfoApp.Size = new System.Drawing.Size(159, 54);
-            this.btnInfoApp.TabIndex = 0;
-            this.btnInfoApp.Text = "Thông tin phần mềm";
-            this.btnInfoApp.UseVisualStyleBackColor = true;
-            this.btnInfoApp.Click += new System.EventHandler(this.buttonX_Click);
             // 
             // Form1
             // 

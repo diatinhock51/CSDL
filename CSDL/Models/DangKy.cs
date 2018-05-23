@@ -14,6 +14,7 @@ namespace CSDL.Models
         string hocKy;
         string namHoc;
         string soTien;
+        string trangThaiNop;
         
         #region Field
         public string MaSV
@@ -69,13 +70,14 @@ namespace CSDL.Models
         }
         #endregion
         public DangKy(string _maSV, string _maHD, string _hocKy,
-            string _namHoc, string _soTien )
+            string _namHoc, string _soTien,string _trangThaiNop )
         {
             maSV = _maSV;
             maHD = _maHD;
             hocKy = _hocKy;
             namHoc = _namHoc;
             soTien = _soTien;
+            trangThaiNop = _trangThaiNop;
         }
         public DangKy(string[] data)
         {
@@ -85,23 +87,24 @@ namespace CSDL.Models
             hocKy = data[2];
             namHoc = data[3];
             soTien = data[4];
+            trangThaiNop = data[5];
         }
         public int InsertDangKy()
         {
-            string[] paras = new string[5] { "@MASV", "@MAHD", "@HOCKY",
-                "@NAMHOC", "@SOTIEN"};
-            object[] values = new object[5] { maSV, maHD, hocKy, namHoc,
-                soTien};
+            string[] paras = new string[6] { "@MASV", "@MAHD", "@HOCKY",
+                "@NAMHOC", "@SOTIEN","@TRANGTHAINNOP"};
+            object[] values = new object[6] { maSV, maHD, hocKy, namHoc,
+                soTien,trangThaiNop};
             var i = Models.connection.ExcuteQuery("spInsertDangKy",
                 System.Data.CommandType.StoredProcedure, paras, values);
             return i;
         }
         public int UpdateDangKy()
         {
-            string[] paras = new string[5] { "@MASV", "@MAHD", "@HOCKY",
-                "@NAMHOC", "@SOTIEN"};
-            object[] values = new object[5] { maSV, maHD, hocKy, namHoc,
-                soTien};
+            string[] paras = new string[6] { "@MASV", "@MAHP", "@LOAIHK",
+                "@NAMHOC", "@SOTIEN","@TRANGTHAINOP"};
+            object[] values = new object[6] { maSV, maHD, hocKy, namHoc,
+                soTien,trangThaiNop};
             var i = Models.connection.ExcuteQuery("spUpdateDangKy",
                 CommandType.StoredProcedure, paras, values);
             return i;
@@ -131,6 +134,23 @@ namespace CSDL.Models
                        .Select(x => x.ToString())
                        .ToArray();
             return new DangKy(data);
+        }
+        public static DataTable getMonHocDangKy( string maSV, string namHoc, string loaiHK)
+        {
+            DataTable dt = new DataTable();
+            dt = Models.connection.getData("spgetMonHocDangKy", CommandType.StoredProcedure,
+                new string[3] { "@MASV", "@NAMHOC","@LOAIHK" }, new object[3] { maSV,namHoc ,loaiHK });
+            return dt;
+        }
+
+
+
+        public static DataTable getSinhVienChuaNopPhi(string namHoc, string loaiHK)
+        {
+            DataTable dt = new DataTable();
+            dt = Models.connection.getData("spgetSinhVienChuaNopPhi", CommandType.StoredProcedure,
+                new string[2] {  "@LOAIHK", "@NAMHOC" }, new object[2] { loaiHK, namHoc });
+            return dt;
         }
     }
 }
