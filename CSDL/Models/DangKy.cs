@@ -116,7 +116,7 @@ namespace CSDL.Models
                 CommandType.StoredProcedure, new string[2] { "@MASV", "@MAHD" }, new object[2] { maSV, maHD });
             return i;
         }
-        //ffff
+        //ffffhjkfhjfh
         public static DataTable getTableDangKy()
         {
             //Gọi thủ tục getDangKy
