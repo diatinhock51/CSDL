@@ -12,13 +12,12 @@ namespace CSDL
 {
     public partial class fSinhVien : Form
     {
-        public fSinhVien()
+        Models.SinhVien mySV;
+        public fSinhVien(string maSV)
         {
+            mySV = Models.SinhVien.getSinhVien(maSV);
             InitializeComponent();
-            UC.DangKyMonHoc dangKy = new UC.DangKyMonHoc("SV0001");
-            dangKy.Dock = DockStyle.Fill;
-            splitContainer2.Panel2.Controls.Clear();
-            splitContainer2.Panel2.Controls.Add(dangKy);
+           
         }
 
         int mouseX = 0;
@@ -63,7 +62,7 @@ namespace CSDL
         }
         void generalDangKyMonHoc()
         {
-            UC.DangKyMonHoc dangKy = new UC.DangKyMonHoc("SV0001");
+            UC.DangKyMonHoc dangKy = new UC.DangKyMonHoc(mySV.MaSV);
             dangKy.Dock = DockStyle.Fill;
             splitContainer2.Panel2.Controls.Clear();
             splitContainer2.Panel2.Controls.Add(dangKy);
@@ -107,6 +106,7 @@ namespace CSDL
         {
             this.Height = 800;
             this.Width = 1200;
+            lblName.Text = mySV.Ten;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

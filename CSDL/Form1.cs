@@ -15,20 +15,22 @@ namespace CSDL
         int mouseX = 0;
         int mouseY = 0;
         bool mouseDown;
-        public Form1()
+        Models.NhanVien myNV;
+        public Form1(string maNV)
         {
+            myNV = Models.NhanVien.getNhanVien(maNV);
             InitializeComponent();
             ////-------- Thu Phi
-            //UC.ThuPhi thuPhi = new UC.ThuPhi();
-            //thuPhi.Dock = DockStyle.Fill;
-            //splitContainer1.Panel2.Controls.Clear();
-            //splitContainer1.Panel2.Controls.Add(thuPhi);
+            UC.ThuPhi thuPhi = new UC.ThuPhi();
+            thuPhi.Dock = DockStyle.Fill;
+            splitContainer1.Panel2.Controls.Clear();
+            splitContainer1.Panel2.Controls.Add(thuPhi);
 
             //---- THong Ke
-            UC.ThongKe thongKe = new UC.ThongKe();
-            thongKe.Dock = DockStyle.Fill;
-            splitContainer1.Panel2.Controls.Clear();
-            splitContainer1.Panel2.Controls.Add(thongKe);
+            //UC.ThongKe thongKe = new UC.ThongKe();
+            //thongKe.Dock = DockStyle.Fill;
+            //splitContainer1.Panel2.Controls.Clear();
+            //splitContainer1.Panel2.Controls.Add(thongKe);
             //UC.QuanLy quanLy = new UC.QuanLy();
             //quanLy.Dock = DockStyle.Fill;
             //splitContainer1.Panel2.Controls.Clear();
@@ -152,6 +154,7 @@ namespace CSDL
         {
             this.Height = 800;
             this.Width = 1200;
+            lblTen.Text = myNV.TenNV;
         }
     }
 }

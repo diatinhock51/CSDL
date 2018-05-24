@@ -32,7 +32,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pcbOff = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblTen = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.btnInfoApp = new System.Windows.Forms.Button();
@@ -54,7 +54,7 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(26)))), ((int)(((byte)(153)))));
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.pcbOff);
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.lblTen);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -89,16 +89,16 @@
             this.pcbOff.TabStop = false;
             this.pcbOff.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
-            // label1
+            // lblTen
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.label1.Location = new System.Drawing.Point(85, 14);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(160, 31);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Nhân Viên A";
+            this.lblTen.AutoSize = true;
+            this.lblTen.Font = new System.Drawing.Font("Times New Roman", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.lblTen.Location = new System.Drawing.Point(85, 14);
+            this.lblTen.Name = "lblTen";
+            this.lblTen.Size = new System.Drawing.Size(160, 31);
+            this.lblTen.TabIndex = 1;
+            this.lblTen.Text = "Nhân Viên A";
             // 
             // pictureBox1
             // 
@@ -244,7 +244,7 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pcbOff;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblTen;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.Button btn3;

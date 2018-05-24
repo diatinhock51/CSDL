@@ -120,7 +120,7 @@ namespace CSDL
             this.btnLogin.Location = new System.Drawing.Point(102, 77);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(85, 24);
-            this.btnLogin.TabIndex = 9;
+            this.btnLogin.TabIndex = 10;
             this.btnLogin.Text = "Đăng nhập";
             this.btnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnLogin.UseVisualStyleBackColor = false;
@@ -153,7 +153,7 @@ namespace CSDL
             this.txtPass.Location = new System.Drawing.Point(112, 50);
             this.txtPass.Name = "txtPass";
             this.txtPass.Size = new System.Drawing.Size(139, 18);
-            this.txtPass.TabIndex = 7;
+            this.txtPass.TabIndex = 9;
             this.txtPass.UseSystemPasswordChar = true;
             this.txtPass.MouseDown += new System.Windows.Forms.MouseEventHandler(this.textBox2_MouseDown);
             // 
@@ -175,6 +175,7 @@ namespace CSDL
             this.Controls.Add(this.splitContainer1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng nhập";
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);

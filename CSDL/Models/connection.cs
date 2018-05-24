@@ -143,7 +143,6 @@ namespace CSDL.Models
                 SqlConnection con = new SqlConnection();
                 con = Getconnection();
                 con.Open();
-
                 SqlCommand cmd = new SqlCommand();
                 cmd.CommandText = strQuery;
                 cmd.CommandType = cmdtype;

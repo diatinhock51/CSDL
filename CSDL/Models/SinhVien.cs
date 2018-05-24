@@ -257,5 +257,24 @@ namespace CSDL.Models
 
             return dt;
         }
+
+        // Hàm lấy ra danh sách mã sinh viên có trong cơ sở dữ liệu để kiểm tra mã đăng nhập vào
+        public static List<List<string>> getMaSV()
+        {
+            List<List<string>> re=new List<List<string>>();
+            List<string> maSV = new List<string>();
+            List<string> matKhau = new List<string>();
+            DataTable dt = new DataTable();
+            dt = Models.connection.getData("Select MaSV,MatKhau from SinhVien",CommandType.Text);
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                maSV.Add(dt.Rows[i][0].ToString().Trim());
+                matKhau.Add(dt.Rows[i][1].ToString().Trim());
+            }
+            re.Add(maSV);
+            re.Add(matKhau);
+            Console.Write(matKhau.Count);
+            return re;
+        }
     }
 }

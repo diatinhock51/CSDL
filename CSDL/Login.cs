@@ -85,30 +85,37 @@ namespace CSDL
         private void btnLogin_Click(object sender, EventArgs e)
         {
             Button login = sender as Button;
-            if (txtName.Text == "sv" && txtPass.Text == "1")
+            List<List<string>> SV = Models.SinhVien.getMaSV();
+            List<List<string>> NV = Models.NhanVien.getMaNV();
+            string maDN = txtName.Text;
+            string matKhau = txtPass.Text;
+            if (SV[0].Contains(maDN.ToUpper()) && SV[1][SV[0].IndexOf(maDN.ToUpper())]==matKhau)
             {
-                SinhVien();
+                SinhVien(maDN);
             }
-            else if (txtName.Text == "nv" && txtPass.Text == "1")
+            else if (NV[0].Contains(maDN.ToUpper()) && NV[1][NV[0].IndexOf(maDN.ToUpper())] == matKhau)
             {
-                NhanVien();
+                NhanVien(maDN);
             }
             else
             {
+                //MessageBox.Show(maDN+"/"+matKhau);
+                //MessageBox.Show(SV[0][0] + "");
+
                 MessageBox.Show("Sai tên đăng nhập hoặc tài khoản","Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
         }
 
-        void SinhVien()
+        void SinhVien(string maDN)
         {
-            CSDL.fSinhVien sv = new CSDL.fSinhVien();
+            CSDL.fSinhVien sv = new CSDL.fSinhVien(maDN);
             this.Hide();
             sv.Show();
         }
 
-        void NhanVien()
+        void NhanVien(string maNV)
         {
-            CSDL.Form1 nv = new CSDL.Form1();
+            CSDL.Form1 nv = new CSDL.Form1(maNV);
             this.Hide();
             nv.Show();
         }
