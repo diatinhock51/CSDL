@@ -159,5 +159,27 @@ namespace CSDL.Models
                        .ToArray();
             return new HoaDon(data);
         }
+        /// <summary>
+        /// Laays ra những sinh viên đã đóng tiền từ ngày bắt đầu đến ngày kết thúc
+        /// </summary>
+        /// <param name="ngayBatDau"></param>
+        /// <param name="ngayKetThuc"></param>
+        /// <returns></returns>
+        public static DataTable getSinhVienNopPhi(string ngayBatDau, string ngayKetThuc)
+        {
+            DataTable dt = new DataTable();
+            dt = Models.connection.getData("spgetSinhVienNopPhi", CommandType.StoredProcedure,
+                new string[2] { "@NGAYBATDAU", "@NGAYKETTHUC"}, new object[2] { ngayBatDau,ngayKetThuc });
+            return dt;
+        }
+
+
+        public static DataTable getSinhVienNopPhiNgay(string ngay)
+        {
+            DataTable dt = new DataTable();
+            dt = Models.connection.getData("spgetSinhVienNopPhiTrongNgay", CommandType.StoredProcedure,
+                new string[1] { "@NGAY" }, new object[1] { ngay });
+            return dt;
+        }
     }
 }

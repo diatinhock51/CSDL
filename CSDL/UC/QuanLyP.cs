@@ -37,13 +37,14 @@ namespace CSDL.UC
         }
         private void BtnThem_Click(object sender, EventArgs e)
         {
-            txtMaHP.Text = txtTenHP.Text = txtSoTinChi.Text =
-            txtSoTiet.Text = txtTenGV.Text = txtLoaiHocKyLHP.Text = "";
-            txtMaHP.ReadOnly = txtTenHP.ReadOnly = txtSoTinChi.ReadOnly = txtSoTiet.ReadOnly
-            = txtTenGV.ReadOnly = txtLoaiHocKyLHP.ReadOnly = false;
-            btnLuu.Tag = "Them";
-            btnHuy.Tag = "Them";
-            ReLoadBtn();
+            CSDL.Controls.PdfCtrl.ExportToPdf((DataTable)dgvLHP.DataSource);
+            //txtMaHP.Text = txtTenHP.Text = txtSoTinChi.Text =
+            //txtSoTiet.Text = txtTenGV.Text = txtLoaiHocKyLHP.Text = "";
+            //txtMaHP.ReadOnly = txtTenHP.ReadOnly = txtSoTinChi.ReadOnly = txtSoTiet.ReadOnly
+            //= txtTenGV.ReadOnly = txtLoaiHocKyLHP.ReadOnly = false;
+            //btnLuu.Tag = "Them";
+            //btnHuy.Tag = "Them";
+            //ReLoadBtn();
         }
         private void BtnSua_Click(object sender, EventArgs e)
         {

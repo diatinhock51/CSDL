@@ -101,8 +101,8 @@ namespace CSDL.Models
         }
         public int UpdateDangKy()
         {
-            string[] paras = new string[6] { "@MASV", "@MAHD", "@HOCKY",
-                "@NAMHOC", "@SOTIEN","@TRANGTHAINNOP"};
+            string[] paras = new string[6] { "@MASV", "@MAHP", "@LOAIHK",
+                "@NAMHOC", "@SOTIEN","@TRANGTHAINOP"};
             object[] values = new object[6] { maSV, maHD, hocKy, namHoc,
                 soTien,trangThaiNop};
             var i = Models.connection.ExcuteQuery("spUpdateDangKy",
@@ -116,7 +116,7 @@ namespace CSDL.Models
                 CommandType.StoredProcedure, new string[2] { "@MASV", "@MAHD" }, new object[2] { maSV, maHD });
             return i;
         }
-
+        //ffffhjkfhjfh
         public static DataTable getTableDangKy()
         {
             //Gọi thủ tục getDangKy
@@ -140,6 +140,16 @@ namespace CSDL.Models
             DataTable dt = new DataTable();
             dt = Models.connection.getData("spgetMonHocDangKy", CommandType.StoredProcedure,
                 new string[3] { "@MASV", "@NAMHOC","@LOAIHK" }, new object[3] { maSV,namHoc ,loaiHK });
+            return dt;
+        }
+
+
+
+        public static DataTable getSinhVienChuaNopPhi(string namHoc, string loaiHK)
+        {
+            DataTable dt = new DataTable();
+            dt = Models.connection.getData("spgetSinhVienChuaNopPhi", CommandType.StoredProcedure,
+                new string[2] {  "@LOAIHK", "@NAMHOC" }, new object[2] { loaiHK, namHoc });
             return dt;
         }
     }

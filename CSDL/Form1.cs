@@ -18,10 +18,21 @@ namespace CSDL
         public Form1()
         {
             InitializeComponent();
-            UC.QuanLy quanLy = new UC.QuanLy();
-            quanLy.Dock = DockStyle.Fill;
+            ////-------- Thu Phi
+            //UC.ThuPhi thuPhi = new UC.ThuPhi();
+            //thuPhi.Dock = DockStyle.Fill;
+            //splitContainer1.Panel2.Controls.Clear();
+            //splitContainer1.Panel2.Controls.Add(thuPhi);
+
+            //---- THong Ke
+            UC.ThongKe thongKe = new UC.ThongKe();
+            thongKe.Dock = DockStyle.Fill;
             splitContainer1.Panel2.Controls.Clear();
-            splitContainer1.Panel2.Controls.Add(quanLy);
+            splitContainer1.Panel2.Controls.Add(thongKe);
+            //UC.QuanLy quanLy = new UC.QuanLy();
+            //quanLy.Dock = DockStyle.Fill;
+            //splitContainer1.Panel2.Controls.Clear();
+            //splitContainer1.Panel2.Controls.Add(quanLy);
             //splitContainer1.Panel1.Hide();
         }
 

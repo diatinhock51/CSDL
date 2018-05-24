@@ -33,6 +33,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="itextsharp, Version=5.5.10.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\itextsharp.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.DirectoryServices" />
@@ -47,9 +51,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\EditHeaderFooter.cs" />
     <Compile Include="Controls\MyButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Controls\PdfCtrl.cs" />
     <Compile Include="Controls\TextBoxBottom.cs">
       <SubType>Component</SubType>
     </Compile>
