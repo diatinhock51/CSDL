@@ -95,7 +95,7 @@ namespace CSDL.UC
                 //MessageBox.Show("Huy sua");
                 txtMaHP.Text = myLHP.MaHP;
                 txtTenHP.Text = myLHP.TenHP;
-                txtSoTinChi.Text = myLHP.SoTinCHi.ToString();
+                txtSoTinChi.Text = myLHP.SoTinChi.ToString();
                 txtSoTiet.Text = myLHP.SoTiet.ToString();
                 txtTenGV.Text = myLHP.HoTenGV;
                 txtLoaiHocKyLHP.Text = myLHP.LoaiHK;

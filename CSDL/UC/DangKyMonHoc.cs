@@ -14,6 +14,7 @@ namespace CSDL.UC
     {
         string maSV;
         Models.DangKy myDK;
+        Models.LopHocPhan myLHP;
         Models.SinhVien mySV;
         Models.LopQuanLy myLQL;
         public DangKyMonHoc(string _maSV)
@@ -26,6 +27,12 @@ namespace CSDL.UC
             cbbNamHoc.Items.Clear();
             DangKy();
         }
+        void LoadData()
+        {
+            dataGridView1.DataSource = Models.DangKy.getMonHocDangKy(
+                mySV.MaSV, myDK.NamHoc, myLHP.LoaiHK);
+        }
+         
         void showInfo()
         {
             txtHoTen.Text = mySV.Ten;
@@ -86,11 +93,28 @@ namespace CSDL.UC
                     cbbGV.Items.Add(val);
                 }
             }
+            cbbGV.SelectedValueChanged += CbbGV_SelectedValueChanged;
+        }
+
+        private void CbbGV_SelectedValueChanged(object sender, EventArgs e)
+        {
+            myLHP = Models.LopHocPhan.getLopHocPhan(cbbMonHoc.SelectedItem.ToString(),
+                cbbGV.SelectedItem.ToString(), cbbHocKy.SelectedItem.ToString());
+            txtTenMH.Text = myLHP.TenHP;
+            txtHoTenGV.Text = myLHP.HoTenGV;
+            txtSoTiet.Text = myLHP.SoTiet.ToString();
+            txtSoTC.Text = myLHP.SoTinChi.ToString();
+            txtMaLop.Text = myLHP.MaHP;
+
         }
 
         private void btnDangKy_Click(object sender, EventArgs e)
         {
-            //myDK= new Models.DangKy(mySV.MaSV,my)
+            
+            myDK = new Models.DangKy(mySV.MaSV, myLHP.MaHP, myLHP.LoaiHK,
+                cbbNamHoc.SelectedItem.ToString(), "100000","Chưa nộp");
+            myDK.InsertDangKy();
+            LoadData();
         }
 
         private void btnIn_Click(object sender, EventArgs e)

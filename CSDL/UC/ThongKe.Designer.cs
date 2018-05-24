@@ -112,18 +112,20 @@
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(584, 522);
+            this.tabControl1.Size = new System.Drawing.Size(779, 642);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.splitContainer1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(576, 496);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(4);
+            this.tabPage1.Size = new System.Drawing.Size(771, 613);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Danh sách nộp phí";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -131,7 +133,8 @@
             // splitContainer1
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(3, 3);
+            this.splitContainer1.Location = new System.Drawing.Point(4, 4);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(4);
             this.splitContainer1.Name = "splitContainer1";
             this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -142,8 +145,9 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.splitContainer2);
-            this.splitContainer1.Size = new System.Drawing.Size(570, 490);
-            this.splitContainer1.SplitterDistance = 60;
+            this.splitContainer1.Size = new System.Drawing.Size(763, 605);
+            this.splitContainer1.SplitterDistance = 74;
+            this.splitContainer1.SplitterWidth = 5;
             this.splitContainer1.TabIndex = 0;
             // 
             // groupBox1
@@ -151,8 +155,10 @@
             this.groupBox1.Controls.Add(this.tableLayoutPanel1);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(570, 60);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Size = new System.Drawing.Size(763, 74);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin thống kê";
@@ -171,40 +177,43 @@
             this.tableLayoutPanel1.Controls.Add(this.btnIn1, 2, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 16);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(30);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(4, 19);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(40, 37, 40, 37);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 42.62295F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 57.37705F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(564, 41);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(755, 51);
             this.tableLayoutPanel1.TabIndex = 2;
             // 
             // dtpSau
             // 
             this.dtpSau.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.dtpSau.Location = new System.Drawing.Point(190, 20);
-            this.dtpSau.MaximumSize = new System.Drawing.Size(200, 20);
+            this.dtpSau.Location = new System.Drawing.Point(255, 26);
+            this.dtpSau.Margin = new System.Windows.Forms.Padding(4);
+            this.dtpSau.MaximumSize = new System.Drawing.Size(265, 20);
             this.dtpSau.Name = "dtpSau";
-            this.dtpSau.Size = new System.Drawing.Size(182, 20);
+            this.dtpSau.Size = new System.Drawing.Size(243, 20);
             this.dtpSau.TabIndex = 1;
             // 
             // dtpTruoc
             // 
             this.dtpTruoc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.dtpTruoc.Location = new System.Drawing.Point(3, 20);
-            this.dtpTruoc.MaximumSize = new System.Drawing.Size(200, 20);
+            this.dtpTruoc.Location = new System.Drawing.Point(4, 26);
+            this.dtpTruoc.Margin = new System.Windows.Forms.Padding(4);
+            this.dtpTruoc.MaximumSize = new System.Drawing.Size(265, 20);
             this.dtpTruoc.Name = "dtpTruoc";
-            this.dtpTruoc.Size = new System.Drawing.Size(181, 20);
+            this.dtpTruoc.Size = new System.Drawing.Size(243, 20);
             this.dtpTruoc.TabIndex = 0;
             // 
             // label2
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(190, 2);
+            this.label2.Location = new System.Drawing.Point(255, 2);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(182, 13);
+            this.label2.Size = new System.Drawing.Size(243, 17);
             this.label2.TabIndex = 1;
             this.label2.Text = "Đến ngày:";
             // 
@@ -212,18 +221,20 @@
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 2);
+            this.label1.Location = new System.Drawing.Point(4, 2);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(181, 13);
+            this.label1.Size = new System.Drawing.Size(243, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Từ ngày:";
             // 
             // btnTaiLai1
             // 
             this.btnTaiLai1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.btnTaiLai1.Location = new System.Drawing.Point(412, 3);
+            this.btnTaiLai1.Location = new System.Drawing.Point(552, 4);
+            this.btnTaiLai1.Margin = new System.Windows.Forms.Padding(4);
             this.btnTaiLai1.Name = "btnTaiLai1";
-            this.btnTaiLai1.Size = new System.Drawing.Size(115, 11);
+            this.btnTaiLai1.Size = new System.Drawing.Size(153, 13);
             this.btnTaiLai1.TabIndex = 2;
             this.btnTaiLai1.Text = "Tải lại";
             this.btnTaiLai1.UseVisualStyleBackColor = true;
@@ -232,9 +243,10 @@
             // btnIn1
             // 
             this.btnIn1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.btnIn1.Location = new System.Drawing.Point(412, 20);
+            this.btnIn1.Location = new System.Drawing.Point(552, 25);
+            this.btnIn1.Margin = new System.Windows.Forms.Padding(4);
             this.btnIn1.Name = "btnIn1";
-            this.btnIn1.Size = new System.Drawing.Size(115, 18);
+            this.btnIn1.Size = new System.Drawing.Size(153, 22);
             this.btnIn1.TabIndex = 2;
             this.btnIn1.Text = "In";
             this.btnIn1.UseVisualStyleBackColor = true;
@@ -243,6 +255,7 @@
             // 
             this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer2.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer2.Margin = new System.Windows.Forms.Padding(4);
             this.splitContainer2.Name = "splitContainer2";
             this.splitContainer2.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -254,8 +267,9 @@
             // 
             this.splitContainer2.Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.splitContainer2.Panel2.Controls.Add(this.splitter3);
-            this.splitContainer2.Size = new System.Drawing.Size(570, 426);
-            this.splitContainer2.SplitterDistance = 371;
+            this.splitContainer2.Size = new System.Drawing.Size(763, 526);
+            this.splitContainer2.SplitterDistance = 458;
+            this.splitContainer2.SplitterWidth = 5;
             this.splitContainer2.TabIndex = 0;
             // 
             // dgvNopPhi
@@ -269,8 +283,9 @@
             this.Column3});
             this.dgvNopPhi.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvNopPhi.Location = new System.Drawing.Point(0, 0);
+            this.dgvNopPhi.Margin = new System.Windows.Forms.Padding(4);
             this.dgvNopPhi.Name = "dgvNopPhi";
-            this.dgvNopPhi.Size = new System.Drawing.Size(570, 371);
+            this.dgvNopPhi.Size = new System.Drawing.Size(763, 458);
             this.dgvNopPhi.TabIndex = 0;
             // 
             // Column1
@@ -314,18 +329,20 @@
             this.splitter3.Cursor = System.Windows.Forms.Cursors.HSplit;
             this.splitter3.Dock = System.Windows.Forms.DockStyle.Top;
             this.splitter3.Location = new System.Drawing.Point(0, 0);
+            this.splitter3.Margin = new System.Windows.Forms.Padding(4);
             this.splitter3.Name = "splitter3";
-            this.splitter3.Size = new System.Drawing.Size(570, 10);
+            this.splitter3.Size = new System.Drawing.Size(763, 12);
             this.splitter3.TabIndex = 7;
             this.splitter3.TabStop = false;
             // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.splitContainer3);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(576, 496);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
+            this.tabPage2.Size = new System.Drawing.Size(771, 613);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Danh sách nợ phí";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -333,7 +350,8 @@
             // splitContainer3
             // 
             this.splitContainer3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer3.Location = new System.Drawing.Point(3, 3);
+            this.splitContainer3.Location = new System.Drawing.Point(4, 4);
+            this.splitContainer3.Margin = new System.Windows.Forms.Padding(4);
             this.splitContainer3.Name = "splitContainer3";
             this.splitContainer3.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -344,8 +362,9 @@
             // splitContainer3.Panel2
             // 
             this.splitContainer3.Panel2.Controls.Add(this.splitContainer4);
-            this.splitContainer3.Size = new System.Drawing.Size(570, 490);
-            this.splitContainer3.SplitterDistance = 60;
+            this.splitContainer3.Size = new System.Drawing.Size(763, 605);
+            this.splitContainer3.SplitterDistance = 74;
+            this.splitContainer3.SplitterWidth = 5;
             this.splitContainer3.TabIndex = 1;
             // 
             // groupBox2
@@ -353,8 +372,10 @@
             this.groupBox2.Controls.Add(this.tableLayoutPanel2);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox2.Location = new System.Drawing.Point(0, 0);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(570, 60);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Size = new System.Drawing.Size(763, 74);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông tin thống kê";
@@ -372,22 +393,23 @@
             this.tableLayoutPanel2.Controls.Add(this.cbNamHoc, 1, 1);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 16);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(30);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(4, 19);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(40, 37, 40, 37);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 42.62295F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 57.37705F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(564, 41);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(755, 51);
             this.tableLayoutPanel2.TabIndex = 2;
             // 
             // label3
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(190, 2);
+            this.label3.Location = new System.Drawing.Point(255, 2);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(182, 13);
+            this.label3.Size = new System.Drawing.Size(243, 17);
             this.label3.TabIndex = 1;
             this.label3.Text = "Năm học:";
             // 
@@ -395,18 +417,20 @@
             // 
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(3, 2);
+            this.label4.Location = new System.Drawing.Point(4, 2);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(181, 13);
+            this.label4.Size = new System.Drawing.Size(243, 17);
             this.label4.TabIndex = 0;
             this.label4.Text = "Học kỳ:";
             // 
             // btnIn2
             // 
             this.btnIn2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.btnIn2.Location = new System.Drawing.Point(412, 20);
+            this.btnIn2.Location = new System.Drawing.Point(552, 25);
+            this.btnIn2.Margin = new System.Windows.Forms.Padding(4);
             this.btnIn2.Name = "btnIn2";
-            this.btnIn2.Size = new System.Drawing.Size(115, 18);
+            this.btnIn2.Size = new System.Drawing.Size(153, 22);
             this.btnIn2.TabIndex = 2;
             this.btnIn2.Text = "In";
             this.btnIn2.UseVisualStyleBackColor = true;
@@ -419,10 +443,11 @@
             "HK1",
             "HK2",
             "HKP"});
-            this.cbHocKy.Location = new System.Drawing.Point(3, 20);
-            this.cbHocKy.MaximumSize = new System.Drawing.Size(200, 0);
+            this.cbHocKy.Location = new System.Drawing.Point(4, 25);
+            this.cbHocKy.Margin = new System.Windows.Forms.Padding(4);
+            this.cbHocKy.MaximumSize = new System.Drawing.Size(265, 0);
             this.cbHocKy.Name = "cbHocKy";
-            this.cbHocKy.Size = new System.Drawing.Size(181, 21);
+            this.cbHocKy.Size = new System.Drawing.Size(243, 24);
             this.cbHocKy.TabIndex = 3;
             this.cbHocKy.Text = "- Chọn học kỳ-";
             // 
@@ -432,10 +457,11 @@
             this.cbNamHoc.FormattingEnabled = true;
             this.cbNamHoc.Items.AddRange(new object[] {
             "2015-2016"});
-            this.cbNamHoc.Location = new System.Drawing.Point(190, 20);
-            this.cbNamHoc.MaximumSize = new System.Drawing.Size(200, 0);
+            this.cbNamHoc.Location = new System.Drawing.Point(255, 25);
+            this.cbNamHoc.Margin = new System.Windows.Forms.Padding(4);
+            this.cbNamHoc.MaximumSize = new System.Drawing.Size(265, 0);
             this.cbNamHoc.Name = "cbNamHoc";
-            this.cbNamHoc.Size = new System.Drawing.Size(182, 21);
+            this.cbNamHoc.Size = new System.Drawing.Size(243, 24);
             this.cbNamHoc.TabIndex = 4;
             this.cbNamHoc.Text = "- Chọn năm học-";
             this.cbNamHoc.SelectedIndexChanged += new System.EventHandler(this.cbNamHoc_SelectedIndexChanged);
@@ -444,6 +470,7 @@
             // 
             this.splitContainer4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer4.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer4.Margin = new System.Windows.Forms.Padding(4);
             this.splitContainer4.Name = "splitContainer4";
             this.splitContainer4.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -455,8 +482,9 @@
             // 
             this.splitContainer4.Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.splitContainer4.Panel2.Controls.Add(this.splitter2);
-            this.splitContainer4.Size = new System.Drawing.Size(570, 426);
-            this.splitContainer4.SplitterDistance = 368;
+            this.splitContainer4.Size = new System.Drawing.Size(763, 526);
+            this.splitContainer4.SplitterDistance = 454;
+            this.splitContainer4.SplitterWidth = 5;
             this.splitContainer4.TabIndex = 0;
             // 
             // dgvNoPhi
@@ -464,8 +492,9 @@
             this.dgvNoPhi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvNoPhi.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvNoPhi.Location = new System.Drawing.Point(0, 0);
+            this.dgvNoPhi.Margin = new System.Windows.Forms.Padding(4);
             this.dgvNoPhi.Name = "dgvNoPhi";
-            this.dgvNoPhi.Size = new System.Drawing.Size(570, 368);
+            this.dgvNoPhi.Size = new System.Drawing.Size(763, 454);
             this.dgvNoPhi.TabIndex = 0;
             // 
             // splitter2
@@ -474,17 +503,19 @@
             this.splitter2.Cursor = System.Windows.Forms.Cursors.HSplit;
             this.splitter2.Dock = System.Windows.Forms.DockStyle.Top;
             this.splitter2.Location = new System.Drawing.Point(0, 0);
+            this.splitter2.Margin = new System.Windows.Forms.Padding(4);
             this.splitter2.Name = "splitter2";
-            this.splitter2.Size = new System.Drawing.Size(570, 10);
+            this.splitter2.Size = new System.Drawing.Size(763, 12);
             this.splitter2.TabIndex = 7;
             this.splitter2.TabStop = false;
             // 
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.tableLayoutPanel3);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Location = new System.Drawing.Point(4, 25);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(576, 496);
+            this.tabPage3.Size = new System.Drawing.Size(771, 613);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Danh sách nộp phí trong ngày";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -500,14 +531,15 @@
             this.tableLayoutPanel3.Controls.Add(this.panel1, 0, 2);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 3;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.08871F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 88.91129F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 51F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 17F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(576, 496);
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 63F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(771, 613);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
             // dgvNopPhiToday
@@ -520,9 +552,10 @@
             this.Column9});
             this.tableLayoutPanel3.SetColumnSpan(this.dgvNopPhiToday, 2);
             this.dgvNopPhiToday.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvNopPhiToday.Location = new System.Drawing.Point(3, 52);
+            this.dgvNopPhiToday.Location = new System.Drawing.Point(4, 64);
+            this.dgvNopPhiToday.Margin = new System.Windows.Forms.Padding(4);
             this.dgvNopPhiToday.Name = "dgvNopPhiToday";
-            this.dgvNopPhiToday.Size = new System.Drawing.Size(570, 389);
+            this.dgvNopPhiToday.Size = new System.Drawing.Size(763, 481);
             this.dgvNopPhiToday.TabIndex = 5;
             // 
             // Column6
@@ -557,35 +590,38 @@
             // 
             this.tableLayoutPanel4.ColumnCount = 1;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 27F));
             this.tableLayoutPanel4.Controls.Add(this.label5, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.dtpToday, 0, 1);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(4, 4);
+            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 2;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 44.8718F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 55.1282F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(244, 43);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(326, 52);
             this.tableLayoutPanel4.TabIndex = 3;
             // 
             // label5
             // 
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(3, 3);
+            this.label5.Location = new System.Drawing.Point(4, 3);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(238, 13);
+            this.label5.Size = new System.Drawing.Size(318, 17);
             this.label5.TabIndex = 0;
             this.label5.Text = "Lọc theo ngày:";
             // 
             // dtpToday
             // 
             this.dtpToday.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.dtpToday.Location = new System.Drawing.Point(3, 22);
-            this.dtpToday.MaximumSize = new System.Drawing.Size(250, 20);
+            this.dtpToday.Location = new System.Drawing.Point(4, 27);
+            this.dtpToday.Margin = new System.Windows.Forms.Padding(4);
+            this.dtpToday.MaximumSize = new System.Drawing.Size(332, 20);
             this.dtpToday.Name = "dtpToday";
-            this.dtpToday.Size = new System.Drawing.Size(238, 20);
+            this.dtpToday.Size = new System.Drawing.Size(318, 20);
             this.dtpToday.TabIndex = 1;
             this.dtpToday.Value = new System.DateTime(2018, 5, 20, 16, 36, 17, 0);
             // 
@@ -598,20 +634,22 @@
             this.tableLayoutPanel5.Controls.Add(this.btnTaiLaiDay, 1, 1);
             this.tableLayoutPanel5.Controls.Add(this.btnIn3, 2, 1);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(253, 3);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(338, 4);
+            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 2;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 32.55814F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 67.44186F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(320, 43);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(429, 52);
             this.tableLayoutPanel5.TabIndex = 7;
             // 
             // btnTaiLaiDay
             // 
             this.btnTaiLaiDay.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.btnTaiLaiDay.Location = new System.Drawing.Point(121, 17);
+            this.btnTaiLaiDay.Location = new System.Drawing.Point(164, 20);
+            this.btnTaiLaiDay.Margin = new System.Windows.Forms.Padding(4);
             this.btnTaiLaiDay.Name = "btnTaiLaiDay";
-            this.btnTaiLaiDay.Size = new System.Drawing.Size(75, 23);
+            this.btnTaiLaiDay.Size = new System.Drawing.Size(100, 28);
             this.btnTaiLaiDay.TabIndex = 0;
             this.btnTaiLaiDay.Text = "Tải lại";
             this.btnTaiLaiDay.UseVisualStyleBackColor = true;
@@ -620,9 +658,10 @@
             // btnIn3
             // 
             this.btnIn3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.btnIn3.Location = new System.Drawing.Point(228, 17);
+            this.btnIn3.Location = new System.Drawing.Point(307, 20);
+            this.btnIn3.Margin = new System.Windows.Forms.Padding(4);
             this.btnIn3.Name = "btnIn3";
-            this.btnIn3.Size = new System.Drawing.Size(75, 23);
+            this.btnIn3.Size = new System.Drawing.Size(100, 28);
             this.btnIn3.TabIndex = 1;
             this.btnIn3.Text = "In";
             this.btnIn3.UseVisualStyleBackColor = true;
@@ -632,18 +671,20 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.tableLayoutPanel3.SetColumnSpan(this.panel1, 2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(3, 447);
+            this.panel1.Location = new System.Drawing.Point(4, 553);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(570, 46);
+            this.panel1.Size = new System.Drawing.Size(763, 56);
             this.panel1.TabIndex = 8;
             // 
             // ThongKe
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tabControl1);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ThongKe";
-            this.Size = new System.Drawing.Size(584, 522);
+            this.Size = new System.Drawing.Size(779, 642);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.splitContainer1.Panel1.ResumeLayout(false);

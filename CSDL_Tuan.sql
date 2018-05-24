@@ -1,5 +1,6 @@
 ﻿-- Tao Proc CSDL- Tuan
 USE CSDL
+GO
 CREATE PROCEDURE [dbo].[spgetTableHoaDon]
 AS
 BEGIN 
@@ -7,7 +8,7 @@ BEGIN
 END
 
 GO
-//-------------------------------------
+-------------------------------------
 CREATE PROCEDURE [dbo].[spInsertHoaDon]
 (
 	@MAHD	char(10),
@@ -124,3 +125,4 @@ GO
  --DROP PROCEDURE dbo.spgetSinhVienChuaNopPhi
 --dbo.spgetSinhVienChuaNopPhi @LOAIHK = 'HK1', -- varchar(10)
 --    @NAMHOC = '2015-2016' -- varchar(10)
+select * from HoaDon

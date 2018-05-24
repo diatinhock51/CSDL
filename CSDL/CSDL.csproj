@@ -37,9 +37,12 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>.\itextsharp.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -51,6 +54,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Report\dsThongKe.cs">
+      <DependentUpon>dsThongKe.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\dsThongKe.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsThongKe.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Controls\EditHeaderFooter.cs" />
     <Compile Include="Controls\MyButton.cs">
       <SubType>Component</SubType>
@@ -99,6 +110,12 @@
     <Compile Include="UC\DangKyMonHoc.Designer.cs">
       <DependentUpon>DangKyMonHoc.cs</DependentUpon>
     </Compile>
+    <Compile Include="Report\fIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\fIn.Designer.cs">
+      <DependentUpon>fIn.cs</DependentUpon>
+    </Compile>
     <Compile Include="UC\HoSoSinhVien.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -138,6 +155,7 @@
     <Compile Include="UC\ThuPhi.Designer.cs">
       <DependentUpon>ThuPhi.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Report\rpHoaDon.rdlc" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -162,6 +180,9 @@
     <EmbeddedResource Include="UC\DangKyMonHoc.resx">
       <DependentUpon>DangKyMonHoc.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Report\fIn.resx">
+      <DependentUpon>fIn.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UC\HoSoSinhVien.resx">
       <DependentUpon>HoSoSinhVien.cs</DependentUpon>
     </EmbeddedResource>
@@ -180,6 +201,18 @@
     <EmbeddedResource Include="UC\ThuPhi.resx">
       <DependentUpon>ThuPhi.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Report\dsThongKe.xsc">
+      <DependentUpon>dsThongKe.xsd</DependentUpon>
+    </None>
+    <None Include="Report\dsThongKe.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsThongKe.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report\dsThongKe.xss">
+      <DependentUpon>dsThongKe.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\DataSources\CSDL.UC.ThongKe.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

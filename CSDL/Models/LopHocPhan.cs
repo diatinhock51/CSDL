@@ -42,7 +42,7 @@ namespace CSDL.Models
             }
         }
 
-        public int SoTinCHi
+        public int SoTinChi
         {
             get
             {
@@ -117,7 +117,7 @@ namespace CSDL.Models
         }
         public int InsertLopHocPhan()
         {
-            string[] paras = new string[6] { "@maHP", "@tenHP", "@sotinchi",
+            string[] paras = new string[6] { "@maHP", "@tenHP", "@soTinChi",
                 "@sotiet", "@tenGV", "@loaiHK" };
             object[] values = new object[6] { maHP, tenHP, soTinChi, soTiet,
                 hoTenGV, loaiHK };
@@ -127,7 +127,7 @@ namespace CSDL.Models
         }
         public int UpdateLopHocPhan()
         {
-            string[] paras = new string[6] { "@maHP", "@tenHP", "@sotinchi",
+            string[] paras = new string[6] { "@maHP", "@tenHP", "@soTinChi",
                 "@sotiet", "@tenGV", "@loaiHK" };
             object[] values = new object[6] { maHP, tenHP, soTinChi, soTiet,
                 hoTenGV, loaiHK };
@@ -155,6 +155,17 @@ namespace CSDL.Models
             DataTable dt = new DataTable();
             dt = Models.connection.getData("spgetLopHocPhan", CommandType.StoredProcedure,
                 new string[1] { "@MaHP" }, new object[1] { maLHP });
+            var obj = dt.Rows[0].ItemArray;
+            var data = obj.Where(x => x != null)
+                       .Select(x => x.ToString())
+                       .ToArray();
+            return new LopHocPhan(data);
+        }
+        public static LopHocPhan getLopHocPhan(string tenHP, string tenGV, string loaiHK)
+        {
+            DataTable dt = new DataTable();
+            dt = Models.connection.getData("spgetLopHocPhanWithOutKey", CommandType.StoredProcedure,
+                new string[3] { "@tenHP", "@tenGV", "@loaiHK" }, new object[3] { tenHP, tenGV, loaiHK });
             var obj = dt.Rows[0].ItemArray;
             var data = obj.Where(x => x != null)
                        .Select(x => x.ToString())

@@ -10,7 +10,7 @@ namespace CSDL.Models
     class DangKy
     {
         string maSV;
-        string maHD;
+        string maHP;
         string hocKy;
         string namHoc;
         string soTien;
@@ -69,11 +69,11 @@ namespace CSDL.Models
             }
         }
         #endregion
-        public DangKy(string _maSV, string _maHD, string _hocKy,
+        public DangKy(string _maSV, string _maHP, string _hocKy,
             string _namHoc, string _soTien,string _trangThaiNop )
         {
             maSV = _maSV;
-            maHD = _maHD;
+            maHP = _maHP;
             hocKy = _hocKy;
             namHoc = _namHoc;
             soTien = _soTien;
@@ -83,7 +83,7 @@ namespace CSDL.Models
         {
             //DateTime.f
             maSV = data[0];
-            maHD = data[1];
+            maHP = data[1];
             hocKy = data[2];
             namHoc = data[3];
             soTien = data[4];
@@ -91,9 +91,9 @@ namespace CSDL.Models
         }
         public int InsertDangKy()
         {
-            string[] paras = new string[6] { "@MASV", "@MAHD", "@HOCKY",
+            string[] paras = new string[6] { "@MASV", "@MAHP", "@HOCKY",
                 "@NAMHOC", "@SOTIEN","@TRANGTHAINNOP"};
-            object[] values = new object[6] { maSV, maHD, hocKy, namHoc,
+            object[] values = new object[6] { maSV, maHP, hocKy, namHoc,
                 soTien,trangThaiNop};
             var i = Models.connection.ExcuteQuery("spInsertDangKy",
                 System.Data.CommandType.StoredProcedure, paras, values);
@@ -103,7 +103,7 @@ namespace CSDL.Models
         {
             string[] paras = new string[6] { "@MASV", "@MAHP", "@LOAIHK",
                 "@NAMHOC", "@SOTIEN","@TRANGTHAINOP"};
-            object[] values = new object[6] { maSV, maHD, hocKy, namHoc,
+            object[] values = new object[6] { maSV, maHP, hocKy, namHoc,
                 soTien,trangThaiNop};
             var i = Models.connection.ExcuteQuery("spUpdateDangKy",
                 CommandType.StoredProcedure, paras, values);
@@ -113,7 +113,7 @@ namespace CSDL.Models
         public int DeleteDangKy()
         {
             var i = Models.connection.ExcuteQuery("spDeleteDangKy",
-                CommandType.StoredProcedure, new string[2] { "@MASV", "@MAHD" }, new object[2] { maSV, maHD });
+                CommandType.StoredProcedure, new string[2] { "@MASV", "@MAHP" }, new object[2] { maSV, maHP });
             return i;
         }
         //ffffhjkfhjfh
@@ -124,11 +124,11 @@ namespace CSDL.Models
         }
         //public static DataTable getTables
 
-        public static DangKy getDangKy(string maSV, string maHD)
+        public static DangKy getDangKy(string maSV, string maHP)
         {
             DataTable dt = new DataTable();
             dt = Models.connection.getData("spgetDangKy", CommandType.StoredProcedure,
-                new string[2] { "@MASV", "@MAHD" }, new object[2] { maSV, maHD });
+                new string[2] { "@MASV", "@MAHP" }, new object[2] { maSV, maHP });
             var obj = dt.Rows[0].ItemArray;
             var data = obj.Where(x => x != null)
                        .Select(x => x.ToString())

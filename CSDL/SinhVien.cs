@@ -63,10 +63,10 @@ namespace CSDL
         }
         void generalDangKyMonHoc()
         {
-            //UC.DangKyMonHoc dangKy = new UC.DangKyMonHoc();
-            //dangKy.Dock = DockStyle.Fill;
-            //splitContainer2.Panel2.Controls.Clear();
-            //splitContainer2.Panel2.Controls.Add(dangKy);
+            UC.DangKyMonHoc dangKy = new UC.DangKyMonHoc("SV0001");
+            dangKy.Dock = DockStyle.Fill;
+            splitContainer2.Panel2.Controls.Clear();
+            splitContainer2.Panel2.Controls.Add(dangKy);
         }
         void generalThongTinNopPhi()
         {

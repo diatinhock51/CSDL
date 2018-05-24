@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.Reporting.WinForms;
 
 namespace CSDL.UC
 {
@@ -164,6 +165,29 @@ namespace CSDL.UC
                 dangKy.UpdateDangKy();
             }
             MessageBox.Show("Cập nhật thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void btnXuatHoaDon_Click(object sender, EventArgs e)
+        {
+            ReportParameter[] listPara = new ReportParameter[]{
+                 new ReportParameter("MaHD",txtMaHDView.Text),
+                 new ReportParameter("TenHD",txtTenHDView.Text),
+                 new ReportParameter("SoTien",txtSoTienView.Text),
+                 new ReportParameter("NgayThu",txtNgayThuView.Text),
+                 new ReportParameter("HocKy",txtHocKyView.Text),
+                 new ReportParameter("NamHoc",txtNamHocView.Text),
+                 new ReportParameter("MaSV",txtMaSVView.Text),
+                 new ReportParameter("TenSV",txtTenSVView.Text),
+                 new ReportParameter("Lop",txtLopView.Text),
+                 new ReportParameter("DiaChi",txtDiaChiView.Text),
+                 new ReportParameter("Email",txtEmailView.Text),
+                 new ReportParameter("Khoa",txtKhoaHoc.Text),
+                 new ReportParameter("MaNV",txtMaNVView.Text),
+                 new ReportParameter("TenNV",txtTenNVView.Text),
+                 new ReportParameter("SDT",txtSDTNVView.Text)
+                };
+            fIn frmIn = new fIn(listPara);
+            frmIn.Show(this);
         }
     }
 }

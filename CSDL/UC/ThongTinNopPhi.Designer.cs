@@ -148,7 +148,7 @@
             "HK1",
             "HK2",
             "HKP"});
-            this.cbHocKyThongTinNopPhi.Location = new System.Drawing.Point(186, 4);
+            this.cbHocKyThongTinNopPhi.Location = new System.Drawing.Point(186, 7);
             this.cbHocKyThongTinNopPhi.Margin = new System.Windows.Forms.Padding(4);
             this.cbHocKyThongTinNopPhi.Name = "cbHocKyThongTinNopPhi";
             this.cbHocKyThongTinNopPhi.Size = new System.Drawing.Size(175, 33);
@@ -159,7 +159,7 @@
             // 
             this.cbNamHocThongTinNopPhi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.cbNamHocThongTinNopPhi.FormattingEnabled = true;
-            this.cbNamHocThongTinNopPhi.Location = new System.Drawing.Point(186, 43);
+            this.cbNamHocThongTinNopPhi.Location = new System.Drawing.Point(186, 46);
             this.cbNamHocThongTinNopPhi.Margin = new System.Windows.Forms.Padding(4);
             this.cbNamHocThongTinNopPhi.Name = "cbNamHocThongTinNopPhi";
             this.cbNamHocThongTinNopPhi.Size = new System.Drawing.Size(175, 33);
@@ -254,7 +254,7 @@
             this.dataGridView1.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.Salmon;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
