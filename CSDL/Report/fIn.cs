@@ -14,15 +14,17 @@ namespace CSDL.UC
 {
     public partial class fIn : Form
     {
+        ReportParameter[] mylistPara;
         public fIn(ReportParameter[] listPara)
         {
-            this.rpInHoaDon.ServerReport.SetParameters(listPara);
             InitializeComponent();
+            mylistPara = listPara;
         }
 
         private void fIn_Load(object sender, EventArgs e)
         {
-            this.rpInHoaDon.ServerReport.Refresh();
+            this.rpInHoaDon.LocalReport.SetParameters(mylistPara);
+            this.rpInHoaDon.LocalReport.Refresh();
             this.rpInHoaDon.RefreshReport();            
         }
     }

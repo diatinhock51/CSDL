@@ -73,7 +73,6 @@ begin
 	LopHocPhan as LHP
 	where 
 	DK.MaHP=LHP.MaHP and DK.LoaiHK=LHP.LoaiHK and MaSV=@MASV
-
 end
 GO
 

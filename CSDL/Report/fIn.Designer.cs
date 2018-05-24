@@ -34,7 +34,7 @@
             // rpInHoaDon
             // 
             this.rpInHoaDon.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rpInHoaDon.LocalReport.ReportEmbeddedResource = "CSDL.Controls.rpHoaDon.rdlc";
+            this.rpInHoaDon.LocalReport.ReportEmbeddedResource = "CSDL.Report.rpHoaDon.rdlc";
             this.rpInHoaDon.Location = new System.Drawing.Point(0, 0);
             this.rpInHoaDon.Name = "rpInHoaDon";
             this.rpInHoaDon.Size = new System.Drawing.Size(713, 450);

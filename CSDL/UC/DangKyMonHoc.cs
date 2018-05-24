@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.Reporting.WinForms;
 
 namespace CSDL.UC
 {
@@ -118,6 +119,15 @@ namespace CSDL.UC
 
         private void btnIn_Click(object sender, EventArgs e)
         {
+            //ReportParameter[] listPara = new ReportParameter[]{
+            // new ReportParameter("MaHD",txtM),
+            // new ReportParameter("DiaChi",db.THONGTINNHAHANGs.FirstOrDefault().DIACHI),
+            // new ReportParameter("SoBan", db.BANANs.Where(p=>p.MABA == soban).FirstOrDefault().TENBA),
+            // new ReportParameter("Ngay",DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")),
+            // new ReportParameter("TongTien",TongTien.ToString()),
+            // new ReportParameter("MaHD",MaHD.ToString())
+            //};
+            //fIn frmIn = new fIn(listPara);
 
         }
     }
