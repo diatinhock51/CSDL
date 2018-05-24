@@ -63,16 +63,6 @@ namespace CSDL.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _492180bb7395b639252698cb45cb2ba3 {
-            get {
-                object obj = ResourceManager.GetObject("492180bb7395b639252698cb45cb2ba3", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap images__1_ {
             get {
                 object obj = ResourceManager.GetObject("images (1)", resourceCulture);

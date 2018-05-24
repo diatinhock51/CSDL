@@ -64,7 +64,6 @@
             // splitContainer1
             // 
             this.splitContainer1.BackColor = System.Drawing.Color.Transparent;
-            this.splitContainer1.BackgroundImage = global::CSDL.Properties.Resources._492180bb7395b639252698cb45cb2ba3;
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
             this.splitContainer1.Margin = new System.Windows.Forms.Padding(4);

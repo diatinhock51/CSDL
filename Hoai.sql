@@ -1,0 +1,28 @@
+USE CSDL
+GO
+CREATE PROC Filter_MaLQL(@MaLQL CHAR(10))
+AS
+BEGIN
+SELECT *FROM dbo.SinhVien WHERE MaLQL=@MaLQL
+END
+go
+Filter_MaLQL'KTHH'
+go
+GO
+CREATE PROC Filter_KhoaHoc(@KhoaHoc NVARCHAR(50))
+AS
+BEGIN
+SELECT *FROM dbo.SinhVien WHERE KhoaHoc = @KhoaHoc
+END
+go
+Filter_KhoaHoc '2015-2020'
+go
+GO
+CREATE PROC Filter_Both(@MaLQL CHAR(10), @KhoaHoc NVARCHAR(50))
+AS
+BEGIN
+SELECT *FROM dbo.SinhVien WHERE MaLQL = @MaLQL AND KhoaHoc = @KhoaHoc
+END
+go
+Filter_Both 'KTHH', '2014-2019'
+go

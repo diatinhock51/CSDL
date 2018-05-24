@@ -233,5 +233,29 @@ namespace CSDL.Models
                 CommandType.StoredProcedure, paras, values);
             return i;
         }
+        public static DataTable Filter_MaLQL(string MaLQL)
+        {
+            DataTable dt = new DataTable();
+            dt = Models.connection.getData("Filter_MaLQL", CommandType.StoredProcedure,
+                new string[1] { "@MaLQL" }, new object[1] { MaLQL });
+
+            return dt;
+        }
+        public static DataTable Filter_KhoaHoc(string KhoaHoc)
+        {
+            DataTable dt = new DataTable();
+            dt = Models.connection.getData("Filter_KhoaHoc", CommandType.StoredProcedure,
+                new string[1] { "@KhoaHoc" }, new object[1] { KhoaHoc });
+
+            return dt;
+        }
+        public static DataTable Filter_Both(string MaLQL, string KhoaHoc)
+        {
+            DataTable dt = new DataTable();
+            dt = Models.connection.getData("Filter_Both", CommandType.StoredProcedure,
+                new string[2] { "@MaLQL", "@KhoaHoc" }, new object[2] { MaLQL, KhoaHoc });
+
+            return dt;
+        }
     }
 }
