@@ -37,16 +37,17 @@
             this.rpInHoaDon.LocalReport.ReportEmbeddedResource = "CSDL.Report.rpHoaDon.rdlc";
             this.rpInHoaDon.Location = new System.Drawing.Point(0, 0);
             this.rpInHoaDon.Name = "rpInHoaDon";
-            this.rpInHoaDon.Size = new System.Drawing.Size(713, 450);
+            this.rpInHoaDon.Size = new System.Drawing.Size(902, 513);
             this.rpInHoaDon.TabIndex = 0;
             // 
             // fIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(713, 450);
+            this.ClientSize = new System.Drawing.Size(902, 513);
             this.Controls.Add(this.rpInHoaDon);
             this.Name = "fIn";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fIn";
             this.Load += new System.EventHandler(this.fIn_Load);
             this.ResumeLayout(false);

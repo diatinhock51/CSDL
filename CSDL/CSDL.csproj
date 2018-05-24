@@ -161,6 +161,7 @@
     <Compile Include="UC\ThuPhi.Designer.cs">
       <DependentUpon>ThuPhi.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Report\rpBang.rdlc" />
     <EmbeddedResource Include="Report\rpHoaDon.rdlc" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
