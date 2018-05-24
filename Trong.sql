@@ -221,3 +221,12 @@ BEGIN
 	         )
 END
 GO
+-- procedue UpdateMKSinhVien
+CREATE PROCEDURE  spUpdateMKSinhVien ( @MASV CHAR(10) , @MATKHAU CHAR(10) )
+AS
+BEGIN
+	UPDATE dbo.SinhVien
+	SET MatKhau = @MATKHAU
+	WHERE MaSV = @MASV 
+END
+GO	

@@ -14,6 +14,7 @@ namespace CSDL.UC
     {
         Models.SinhVien sv;
         string MaSV;
+        string MK;
         public HoSoSinhVien()
         {
             InitializeComponent();
@@ -31,6 +32,7 @@ namespace CSDL.UC
             txtDiaChiHoSo.Text = sv.DiaChi;
             txtEmailHoSo.Text = sv.Email;
             txtKhoaHocSV.Text = sv.KhoaHoc;
+            this.MK = sv.MatKhau;
         }
         void getDoiTuong( string MaSV)
         {
@@ -44,6 +46,17 @@ namespace CSDL.UC
             Models.LopQuanLy lql = Models.LopQuanLy.getLopQuanLy(sv.MaLQL);
             txtLopHoSo.Text = lql.TenLQL;
             txtKhoaHoSo.Text = lql.Khoa;
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form2 fr2 = new Form2(sv);
+            fr2.Show();
         }
     }
 }
