@@ -226,6 +226,7 @@ namespace CSDL.Models
         }
         public int UpdateMKSinhVien()
         {
+            ///
             string[] paras = new string[2] { "@MASV", "@MATKHAU"};
             object[] values = new object[2] { maSV, matKhau};
             var i = Models.connection.ExcuteQuery("spUpdateMKSinhVien",
