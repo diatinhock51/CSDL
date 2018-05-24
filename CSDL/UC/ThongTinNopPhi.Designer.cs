@@ -148,7 +148,7 @@
             "HK1",
             "HK2",
             "HKP"});
-            this.cbHocKyThongTinNopPhi.Location = new System.Drawing.Point(186, 7);
+            this.cbHocKyThongTinNopPhi.Location = new System.Drawing.Point(186, 4);
             this.cbHocKyThongTinNopPhi.Margin = new System.Windows.Forms.Padding(4);
             this.cbHocKyThongTinNopPhi.Name = "cbHocKyThongTinNopPhi";
             this.cbHocKyThongTinNopPhi.Size = new System.Drawing.Size(175, 33);
@@ -159,7 +159,7 @@
             // 
             this.cbNamHocThongTinNopPhi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.cbNamHocThongTinNopPhi.FormattingEnabled = true;
-            this.cbNamHocThongTinNopPhi.Location = new System.Drawing.Point(186, 46);
+            this.cbNamHocThongTinNopPhi.Location = new System.Drawing.Point(186, 43);
             this.cbNamHocThongTinNopPhi.Margin = new System.Windows.Forms.Padding(4);
             this.cbNamHocThongTinNopPhi.Name = "cbNamHocThongTinNopPhi";
             this.cbNamHocThongTinNopPhi.Size = new System.Drawing.Size(175, 33);
@@ -210,10 +210,10 @@
             // tbnTaiLaiThongTinNopPhi
             // 
             this.tbnTaiLaiThongTinNopPhi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.tbnTaiLaiThongTinNopPhi.Location = new System.Drawing.Point(35, 4);
+            this.tbnTaiLaiThongTinNopPhi.Location = new System.Drawing.Point(30, 4);
             this.tbnTaiLaiThongTinNopPhi.Margin = new System.Windows.Forms.Padding(4);
             this.tbnTaiLaiThongTinNopPhi.Name = "tbnTaiLaiThongTinNopPhi";
-            this.tbnTaiLaiThongTinNopPhi.Size = new System.Drawing.Size(112, 31);
+            this.tbnTaiLaiThongTinNopPhi.Size = new System.Drawing.Size(122, 31);
             this.tbnTaiLaiThongTinNopPhi.TabIndex = 1;
             this.tbnTaiLaiThongTinNopPhi.Text = "Tải lại";
             this.tbnTaiLaiThongTinNopPhi.UseVisualStyleBackColor = true;

@@ -29,8 +29,7 @@ namespace CSDL.UC
         }
         void LoadData()
         {
-            dataGridView1.DataSource = Models.DangKy.getMonHocDangKy(
-                mySV.MaSV, myDK.NamHoc, myLHP.LoaiHK);
+            dataGridView1.DataSource = Models.DangKy.getDangKymaSV(mySV.MaSV);
         }
          
         void showInfo()
@@ -59,7 +58,7 @@ namespace CSDL.UC
             var item = GetNamHoc();
             for (int i = 0; i <item.Length ; i++)
             {
-                cbbNamHoc.Items.Add(item[i]);
+                cbbNamHoc.Items.Add(item[i].ToString() + "-" + (item[i] + 1).ToString());
             }            
             cbbHocKy.SelectedValueChanged += CbbHocKy_SelectedValueChanged;
         }
@@ -110,9 +109,9 @@ namespace CSDL.UC
 
         private void btnDangKy_Click(object sender, EventArgs e)
         {
-            
+            Int64 soTien = myLHP.SoTinChi * 25000;
             myDK = new Models.DangKy(mySV.MaSV, myLHP.MaHP, myLHP.LoaiHK,
-                cbbNamHoc.SelectedItem.ToString(), "100000","Chưa nộp");
+                cbbNamHoc.SelectedItem.ToString(), soTien.ToString(),"Chưa nộp");
             myDK.InsertDangKy();
             LoadData();
         }

@@ -142,14 +142,18 @@ namespace CSDL.Models
                 new string[3] { "@MASV", "@NAMHOC","@LOAIHK" }, new object[3] { maSV,namHoc ,loaiHK });
             return dt;
         }
-
-
-
         public static DataTable getSinhVienChuaNopPhi(string namHoc, string loaiHK)
         {
             DataTable dt = new DataTable();
             dt = Models.connection.getData("spgetSinhVienChuaNopPhi", CommandType.StoredProcedure,
                 new string[2] {  "@LOAIHK", "@NAMHOC" }, new object[2] { loaiHK, namHoc });
+            return dt;
+        }
+        public static DataTable getDangKymaSV(string maSV)
+        {
+            DataTable dt = new DataTable();
+            dt = Models.connection.getData("spgetDangKymaSV", CommandType.StoredProcedure,
+                new string[1] { "@MASV"}, new object[1] { maSV });
             return dt;
         }
     }

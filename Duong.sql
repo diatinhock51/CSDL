@@ -64,3 +64,16 @@ BEGIN
 	)
 END
 go
+create procedure spgetDangKymaSV (@MASV varchar(10))
+as
+begin
+	Select LHP.MaHP,TenHP,SoTinChi,SoTiet,TenGV,LHP.LoaiHK, TrangThaiNop 
+	from 
+	DangKy as DK,
+	LopHocPhan as LHP
+	where 
+	DK.MaHP=LHP.MaHP and DK.LoaiHK=LHP.LoaiHK and MaSV=@MASV
+
+end
+GO
+
