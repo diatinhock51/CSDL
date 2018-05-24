@@ -13,6 +13,7 @@ namespace CSDL.UC
     public partial class DangKyMonHoc : UserControl
     {
         string maSV;
+        Models.DangKy myDK;
         Models.SinhVien mySV;
         Models.LopQuanLy myLQL;
         public DangKyMonHoc(string _maSV)
@@ -22,6 +23,7 @@ namespace CSDL.UC
             mySV = Models.SinhVien.getSinhVien(maSV);
             myLQL = Models.LopQuanLy.getLopQuanLy(mySV.MaLQL);
             showInfo();
+            cbbNamHoc.Items.Clear();
             DangKy();
         }
         void showInfo()
@@ -45,16 +47,20 @@ namespace CSDL.UC
         }
         void DangKy()
         {
+            cbbNamHoc.Items.Clear();
+            cbbNamHoc.Text = "-Chọn năm học-";
             var item = GetNamHoc();
             for (int i = 0; i <item.Length ; i++)
             {
                 cbbNamHoc.Items.Add(item[i]);
-            }
+            }            
             cbbHocKy.SelectedValueChanged += CbbHocKy_SelectedValueChanged;
         }
 
         private void CbbHocKy_SelectedValueChanged(object sender, EventArgs e)
         {
+            cbbMonHoc.Items.Clear();
+            cbbMonHoc.Text = "-Chọn môn học-";
             var dataTen = Models.LopHocPhan.getTenLHP(cbbHocKy.SelectedItem.ToString());
             for (int i = 0; i < dataTen.Rows.Count; i++)
             {
@@ -69,6 +75,8 @@ namespace CSDL.UC
 
         private void CbbMonHoc_SelectedValueChanged(object sender, EventArgs e)
         {
+            cbbGV.Items.Clear();
+            cbbGV.Text = "-Chọn giáo viên-";
             var dataGV = Models.LopHocPhan.getTenGV(cbbHocKy.SelectedItem.ToString(), cbbMonHoc.SelectedItem.ToString());
             for (int i = 0; i < dataGV.Rows.Count; i++)
             {
@@ -78,6 +86,16 @@ namespace CSDL.UC
                     cbbGV.Items.Add(val);
                 }
             }
+        }
+
+        private void btnDangKy_Click(object sender, EventArgs e)
+        {
+            //myDK= new Models.DangKy(mySV.MaSV,my)
+        }
+
+        private void btnIn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

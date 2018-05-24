@@ -43,8 +43,8 @@
             this.txtSoTiet = new System.Windows.Forms.TextBox();
             this.txtSoTC = new System.Windows.Forms.TextBox();
             this.txtMaLop = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnIn = new System.Windows.Forms.Button();
+            this.btnDangKy = new System.Windows.Forms.Button();
             this.label16 = new System.Windows.Forms.Label();
             this.cbbNamHoc = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -142,8 +142,8 @@
             this.tableLayoutPanel3.Controls.Add(this.txtSoTiet, 3, 3);
             this.tableLayoutPanel3.Controls.Add(this.txtSoTC, 3, 4);
             this.tableLayoutPanel3.Controls.Add(this.txtMaLop, 3, 5);
-            this.tableLayoutPanel3.Controls.Add(this.button2, 1, 4);
-            this.tableLayoutPanel3.Controls.Add(this.button1, 0, 4);
+            this.tableLayoutPanel3.Controls.Add(this.btnIn, 1, 4);
+            this.tableLayoutPanel3.Controls.Add(this.btnDangKy, 0, 4);
             this.tableLayoutPanel3.Controls.Add(this.label16, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.cbbNamHoc, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.label9, 0, 1);
@@ -292,25 +292,27 @@
             this.txtMaLop.Size = new System.Drawing.Size(174, 20);
             this.txtMaLop.TabIndex = 1;
             // 
-            // button2
+            // btnIn
             // 
-            this.button2.Location = new System.Drawing.Point(183, 120);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(171, 21);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "In danh sách môn học";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnIn.Location = new System.Drawing.Point(183, 120);
+            this.btnIn.Margin = new System.Windows.Forms.Padding(4);
+            this.btnIn.Name = "btnIn";
+            this.btnIn.Size = new System.Drawing.Size(171, 21);
+            this.btnIn.TabIndex = 4;
+            this.btnIn.Text = "In danh sách môn học";
+            this.btnIn.UseVisualStyleBackColor = true;
+            this.btnIn.Click += new System.EventHandler(this.btnIn_Click);
             // 
-            // button1
+            // btnDangKy
             // 
-            this.button1.Location = new System.Drawing.Point(4, 120);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(133, 21);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Đăng ký";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnDangKy.Location = new System.Drawing.Point(4, 120);
+            this.btnDangKy.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDangKy.Name = "btnDangKy";
+            this.btnDangKy.Size = new System.Drawing.Size(133, 21);
+            this.btnDangKy.TabIndex = 3;
+            this.btnDangKy.Text = "Đăng ký";
+            this.btnDangKy.UseVisualStyleBackColor = true;
+            this.btnDangKy.Click += new System.EventHandler(this.btnDangKy_Click);
             // 
             // label16
             // 
@@ -332,6 +334,7 @@
             this.cbbNamHoc.Name = "cbbNamHoc";
             this.cbbNamHoc.Size = new System.Drawing.Size(171, 24);
             this.cbbNamHoc.TabIndex = 6;
+            this.cbbNamHoc.Text = "-Chọn năm học-";
             // 
             // label9
             // 
@@ -357,6 +360,7 @@
             this.cbbHocKy.Name = "cbbHocKy";
             this.cbbHocKy.Size = new System.Drawing.Size(171, 24);
             this.cbbHocKy.TabIndex = 2;
+            this.cbbHocKy.Text = "-Chọn học kỳ-";
             // 
             // label8
             // 
@@ -389,6 +393,7 @@
             this.cbbGV.Name = "cbbGV";
             this.cbbGV.Size = new System.Drawing.Size(171, 24);
             this.cbbGV.TabIndex = 2;
+            this.cbbGV.Text = "-Chọn giáo viên-";
             // 
             // cbbMonHoc
             // 
@@ -399,6 +404,7 @@
             this.cbbMonHoc.Name = "cbbMonHoc";
             this.cbbMonHoc.Size = new System.Drawing.Size(171, 24);
             this.cbbMonHoc.TabIndex = 2;
+            this.cbbMonHoc.Text = "-Chọn môn học-";
             // 
             // label1
             // 
@@ -706,8 +712,8 @@
         private System.Windows.Forms.TextBox txtSoTiet;
         private System.Windows.Forms.TextBox txtSoTC;
         private System.Windows.Forms.TextBox txtMaLop;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnDangKy;
+        private System.Windows.Forms.Button btnIn;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.ComboBox cbbNamHoc;
