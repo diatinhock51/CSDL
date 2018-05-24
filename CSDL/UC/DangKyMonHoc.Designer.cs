@@ -67,13 +67,13 @@
             this.txtHeSoMG = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.colSTT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colMonHoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colMaLop = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colMonHoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colSoTC = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colGV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colSoTiet = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colHocKy = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colTrangThaiNop = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -569,63 +569,73 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.colSTT,
-            this.colMonHoc,
             this.colMaLop,
+            this.colMonHoc,
             this.colSoTC,
             this.colGV,
             this.colSoTiet,
-            this.colHocKy});
+            this.colHocKy,
+            this.colTrangThaiNop});
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(4, 19);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(719, 161);
             this.dataGridView1.TabIndex = 6;
             // 
-            // colSTT
-            // 
-            this.colSTT.HeaderText = "STT";
-            this.colSTT.Name = "colSTT";
-            this.colSTT.ReadOnly = true;
-            // 
-            // colMonHoc
-            // 
-            this.colMonHoc.HeaderText = "Môn học";
-            this.colMonHoc.Name = "colMonHoc";
-            this.colMonHoc.ReadOnly = true;
-            // 
             // colMaLop
             // 
+            this.colMaLop.DataPropertyName = "MaHP";
             this.colMaLop.HeaderText = "Mã lớp";
             this.colMaLop.Name = "colMaLop";
             this.colMaLop.ReadOnly = true;
             // 
+            // colMonHoc
+            // 
+            this.colMonHoc.DataPropertyName = "TenHP";
+            this.colMonHoc.HeaderText = "Môn học";
+            this.colMonHoc.Name = "colMonHoc";
+            this.colMonHoc.ReadOnly = true;
+            // 
             // colSoTC
             // 
+            this.colSoTC.DataPropertyName = "SoTinChi";
             this.colSoTC.HeaderText = "Số tín chỉ";
             this.colSoTC.Name = "colSoTC";
             this.colSoTC.ReadOnly = true;
             // 
             // colGV
             // 
+            this.colGV.DataPropertyName = "TenGV";
             this.colGV.HeaderText = "Giáo viên";
             this.colGV.Name = "colGV";
             this.colGV.ReadOnly = true;
             // 
             // colSoTiet
             // 
+            this.colSoTiet.DataPropertyName = "SoTiet";
             this.colSoTiet.HeaderText = "Số tiết";
             this.colSoTiet.Name = "colSoTiet";
             this.colSoTiet.ReadOnly = true;
             // 
             // colHocKy
             // 
+            this.colHocKy.DataPropertyName = "LoaiHK";
             this.colHocKy.HeaderText = "Học kỳ";
             this.colHocKy.Name = "colHocKy";
             this.colHocKy.ReadOnly = true;
+            // 
+            // colTrangThaiNop
+            // 
+            this.colTrangThaiNop.DataPropertyName = "TrangThaiNop";
+            this.colTrangThaiNop.HeaderText = "Trạng thái nộp";
+            this.colTrangThaiNop.Name = "colTrangThaiNop";
+            this.colTrangThaiNop.ReadOnly = true;
             // 
             // DangKyMonHoc
             // 
@@ -690,13 +700,13 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.ComboBox cbbNamHoc;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colSTT;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colMonHoc;
+        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.DataGridViewTextBoxColumn colMaLop;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colMonHoc;
         private System.Windows.Forms.DataGridViewTextBoxColumn colSoTC;
         private System.Windows.Forms.DataGridViewTextBoxColumn colGV;
         private System.Windows.Forms.DataGridViewTextBoxColumn colSoTiet;
         private System.Windows.Forms.DataGridViewTextBoxColumn colHocKy;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colTrangThaiNop;
     }
 }

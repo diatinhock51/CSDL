@@ -108,7 +108,6 @@
             this.btnSVXoa = new System.Windows.Forms.Button();
             this.btnSVHuy = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
             this.btnHuyLQL = new System.Windows.Forms.Button();
@@ -131,6 +130,7 @@
             this.CMaLQL = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CTenLQL = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CKhoa = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel13 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel14 = new System.Windows.Forms.TableLayoutPanel();
             this.btnHuyDTMG = new System.Windows.Forms.Button();
@@ -169,13 +169,13 @@
             this.tlpSinhVien.SuspendLayout();
             this.tableLayoutPanel8.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            this.tabPage4.SuspendLayout();
             this.tableLayoutPanel9.SuspendLayout();
             this.tableLayoutPanel10.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.tableLayoutPanel11.SuspendLayout();
             this.tableLayoutPanel12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLQL)).BeginInit();
+            this.tabPage4.SuspendLayout();
             this.tableLayoutPanel13.SuspendLayout();
             this.tableLayoutPanel14.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -1033,11 +1033,11 @@
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel8.Controls.Add(this.btnSVThem, 0, 0);
             this.tableLayoutPanel8.Controls.Add(this.btnSVSua, 1, 0);
-            this.tableLayoutPanel8.Controls.Add(this.btnSVLuu, 0, 1);
             this.tableLayoutPanel8.Controls.Add(this.btnSVXoa, 2, 0);
             this.tableLayoutPanel8.Controls.Add(this.btnSVHuy, 2, 1);
+            this.tableLayoutPanel8.Controls.Add(this.btnSVLuu, 0, 1);
+            this.tableLayoutPanel8.Controls.Add(this.btnSVThem, 0, 0);
             this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel8.Location = new System.Drawing.Point(403, 278);
             this.tableLayoutPanel8.Margin = new System.Windows.Forms.Padding(4);
@@ -1119,17 +1119,6 @@
             this.tabPage2.TabIndex = 3;
             this.tabPage2.Text = "Lớp quản lý";
             this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Controls.Add(this.tableLayoutPanel13);
-            this.tabPage4.Location = new System.Drawing.Point(4, 25);
-            this.tabPage4.Margin = new System.Windows.Forms.Padding(4);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(808, 612);
-            this.tabPage4.TabIndex = 4;
-            this.tabPage4.Text = "Đối tượng miễn giảm";
-            this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel9
             // 
@@ -1275,7 +1264,7 @@
             // txtMaLQL
             // 
             this.txtMaLQL.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtMaLQL.Location = new System.Drawing.Point(151, 16);
+            this.txtMaLQL.Location = new System.Drawing.Point(151, 15);
             this.txtMaLQL.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaLQL.MaximumSize = new System.Drawing.Size(265, 20);
             this.txtMaLQL.Name = "txtMaLQL";
@@ -1286,7 +1275,7 @@
             // txtTenLQL
             // 
             this.txtTenLQL.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTenLQL.Location = new System.Drawing.Point(151, 68);
+            this.txtTenLQL.Location = new System.Drawing.Point(151, 67);
             this.txtTenLQL.Margin = new System.Windows.Forms.Padding(4);
             this.txtTenLQL.MaximumSize = new System.Drawing.Size(265, 20);
             this.txtTenLQL.Name = "txtTenLQL";
@@ -1297,7 +1286,7 @@
             // txtKhoa
             // 
             this.txtKhoa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtKhoa.Location = new System.Drawing.Point(151, 120);
+            this.txtKhoa.Location = new System.Drawing.Point(151, 119);
             this.txtKhoa.Margin = new System.Windows.Forms.Padding(4);
             this.txtKhoa.MaximumSize = new System.Drawing.Size(265, 20);
             this.txtKhoa.Name = "txtKhoa";
@@ -1413,6 +1402,17 @@
             this.CKhoa.HeaderText = "Khoa";
             this.CKhoa.Name = "CKhoa";
             this.CKhoa.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.tableLayoutPanel13);
+            this.tabPage4.Location = new System.Drawing.Point(4, 25);
+            this.tabPage4.Margin = new System.Windows.Forms.Padding(4);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Size = new System.Drawing.Size(808, 612);
+            this.tabPage4.TabIndex = 4;
+            this.tabPage4.Text = "Đối tượng miễn giảm";
+            this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel13
             // 
@@ -1558,7 +1558,7 @@
             // txtMaDT
             // 
             this.txtMaDT.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtMaDT.Location = new System.Drawing.Point(151, 16);
+            this.txtMaDT.Location = new System.Drawing.Point(151, 15);
             this.txtMaDT.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaDT.MaximumSize = new System.Drawing.Size(265, 20);
             this.txtMaDT.Name = "txtMaDT";
@@ -1569,7 +1569,7 @@
             // txtTenDT
             // 
             this.txtTenDT.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTenDT.Location = new System.Drawing.Point(151, 68);
+            this.txtTenDT.Location = new System.Drawing.Point(151, 67);
             this.txtTenDT.Margin = new System.Windows.Forms.Padding(4);
             this.txtTenDT.MaximumSize = new System.Drawing.Size(265, 20);
             this.txtTenDT.Name = "txtTenDT";
@@ -1580,7 +1580,7 @@
             // txtHSMG
             // 
             this.txtHSMG.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtHSMG.Location = new System.Drawing.Point(151, 120);
+            this.txtHSMG.Location = new System.Drawing.Point(151, 119);
             this.txtHSMG.Margin = new System.Windows.Forms.Padding(4);
             this.txtHSMG.MaximumSize = new System.Drawing.Size(265, 20);
             this.txtHSMG.Name = "txtHSMG";
@@ -1726,7 +1726,6 @@
             this.tlpSinhVien.PerformLayout();
             this.tableLayoutPanel8.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
-            this.tabPage4.ResumeLayout(false);
             this.tableLayoutPanel9.ResumeLayout(false);
             this.tableLayoutPanel9.PerformLayout();
             this.tableLayoutPanel10.ResumeLayout(false);
@@ -1735,6 +1734,7 @@
             this.tableLayoutPanel11.PerformLayout();
             this.tableLayoutPanel12.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvLQL)).EndInit();
+            this.tabPage4.ResumeLayout(false);
             this.tableLayoutPanel13.ResumeLayout(false);
             this.tableLayoutPanel13.PerformLayout();
             this.tableLayoutPanel14.ResumeLayout(false);
