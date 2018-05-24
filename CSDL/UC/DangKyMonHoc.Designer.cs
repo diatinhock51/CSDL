@@ -54,6 +54,7 @@
             this.label16 = new System.Windows.Forms.Label();
             this.cbbNamHoc = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
@@ -75,15 +76,14 @@
             this.colGV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colSoTiet = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colHocKy = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -352,7 +352,7 @@
             this.txtMaLop.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaLop.MaximumSize = new System.Drawing.Size(265, 20);
             this.txtMaLop.Name = "txtMaLop";
-            this.txtMaLop.Size = new System.Drawing.Size(174, 22);
+            this.txtMaLop.Size = new System.Drawing.Size(174, 20);
             this.txtMaLop.TabIndex = 1;
             // 
             // button2
@@ -409,6 +409,16 @@
             this.label1.Size = new System.Drawing.Size(158, 33);
             this.label1.TabIndex = 0;
             this.label1.Text = "Đăng ký môn học";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Red;
+            this.pictureBox1.Location = new System.Drawing.Point(690, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(41, 25);
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // groupBox1
             // 
@@ -515,7 +525,7 @@
             this.txtHoTen.Margin = new System.Windows.Forms.Padding(4);
             this.txtHoTen.MaximumSize = new System.Drawing.Size(265, 20);
             this.txtHoTen.Name = "txtHoTen";
-            this.txtHoTen.Size = new System.Drawing.Size(171, 22);
+            this.txtHoTen.Size = new System.Drawing.Size(171, 20);
             this.txtHoTen.TabIndex = 1;
             // 
             // txtLop
@@ -525,7 +535,7 @@
             this.txtLop.Margin = new System.Windows.Forms.Padding(4);
             this.txtLop.MaximumSize = new System.Drawing.Size(265, 20);
             this.txtLop.Name = "txtLop";
-            this.txtLop.Size = new System.Drawing.Size(171, 22);
+            this.txtLop.Size = new System.Drawing.Size(171, 20);
             this.txtLop.TabIndex = 1;
             // 
             // txtKhoa
@@ -535,7 +545,7 @@
             this.txtKhoa.Margin = new System.Windows.Forms.Padding(4);
             this.txtKhoa.MaximumSize = new System.Drawing.Size(265, 20);
             this.txtKhoa.Name = "txtKhoa";
-            this.txtKhoa.Size = new System.Drawing.Size(171, 22);
+            this.txtKhoa.Size = new System.Drawing.Size(171, 20);
             this.txtKhoa.TabIndex = 1;
             // 
             // txtKhoaHoc
@@ -545,7 +555,7 @@
             this.txtKhoaHoc.Margin = new System.Windows.Forms.Padding(4);
             this.txtKhoaHoc.MaximumSize = new System.Drawing.Size(265, 20);
             this.txtKhoaHoc.Name = "txtKhoaHoc";
-            this.txtKhoaHoc.Size = new System.Drawing.Size(171, 22);
+            this.txtKhoaHoc.Size = new System.Drawing.Size(171, 20);
             this.txtKhoaHoc.TabIndex = 1;
             // 
             // txtHeSoMG
@@ -555,7 +565,7 @@
             this.txtHeSoMG.Margin = new System.Windows.Forms.Padding(4);
             this.txtHeSoMG.MaximumSize = new System.Drawing.Size(265, 20);
             this.txtHeSoMG.Name = "txtHeSoMG";
-            this.txtHeSoMG.Size = new System.Drawing.Size(174, 22);
+            this.txtHeSoMG.Size = new System.Drawing.Size(174, 20);
             this.txtHeSoMG.TabIndex = 1;
             // 
             // groupBox3
@@ -632,16 +642,6 @@
             this.colHocKy.Name = "colHocKy";
             this.colHocKy.ReadOnly = true;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Red;
-            this.pictureBox1.Location = new System.Drawing.Point(690, 4);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(41, 25);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
             // DangKyMonHoc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -655,12 +655,12 @@
             this.groupBox2.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
