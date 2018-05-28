@@ -15,6 +15,7 @@ namespace CSDL.UC
     public partial class fIn : Form
     {
         ReportParameter[] mylistPara;
+        DataTable myDt;
         public fIn(ReportParameter[] listPara)
         {
             InitializeComponent();
@@ -23,6 +24,10 @@ namespace CSDL.UC
 
         private void fIn_Load(object sender, EventArgs e)
         {
+            ReportDataSource rds = new ReportDataSource();
+            rds.Name = "";
+            rds.Value = myDt;
+            this.rpInHoaDon.LocalReport.DataSources.Add()
             this.rpInHoaDon.LocalReport.SetParameters(mylistPara);
             this.rpInHoaDon.LocalReport.Refresh();
             this.rpInHoaDon.RefreshReport();            

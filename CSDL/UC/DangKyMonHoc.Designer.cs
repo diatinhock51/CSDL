@@ -97,7 +97,7 @@
             this.tableLayoutPanel1.Controls.Add(this.groupBox3, 0, 3);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
@@ -113,9 +113,9 @@
             this.groupBox2.Controls.Add(this.tableLayoutPanel3);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox2.Location = new System.Drawing.Point(4, 235);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(727, 198);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
@@ -150,7 +150,7 @@
             this.tableLayoutPanel3.Controls.Add(this.txtMaLop, 3, 4);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(4, 19);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 6;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
@@ -177,10 +177,10 @@
             // 
             this.txtTenMH.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTenMH.Location = new System.Drawing.Point(541, 4);
-            this.txtTenMH.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTenMH.Margin = new System.Windows.Forms.Padding(4);
             this.txtTenMH.MaximumSize = new System.Drawing.Size(265, 20);
             this.txtTenMH.Name = "txtTenMH";
-            this.txtTenMH.Size = new System.Drawing.Size(174, 20);
+            this.txtTenMH.Size = new System.Drawing.Size(174, 22);
             this.txtTenMH.TabIndex = 1;
             // 
             // label11
@@ -198,16 +198,16 @@
             // 
             this.txtHoTenGV.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtHoTenGV.Location = new System.Drawing.Point(541, 33);
-            this.txtHoTenGV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtHoTenGV.Margin = new System.Windows.Forms.Padding(4);
             this.txtHoTenGV.MaximumSize = new System.Drawing.Size(265, 20);
             this.txtHoTenGV.Name = "txtHoTenGV";
-            this.txtHoTenGV.Size = new System.Drawing.Size(174, 20);
+            this.txtHoTenGV.Size = new System.Drawing.Size(174, 22);
             this.txtHoTenGV.TabIndex = 1;
             // 
             // btnIn
             // 
             this.btnIn.Location = new System.Drawing.Point(183, 120);
-            this.btnIn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnIn.Margin = new System.Windows.Forms.Padding(4);
             this.btnIn.Name = "btnIn";
             this.btnIn.Size = new System.Drawing.Size(171, 21);
             this.btnIn.TabIndex = 4;
@@ -218,7 +218,7 @@
             // btnDangKy
             // 
             this.btnDangKy.Location = new System.Drawing.Point(4, 120);
-            this.btnDangKy.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDangKy.Margin = new System.Windows.Forms.Padding(4);
             this.btnDangKy.Name = "btnDangKy";
             this.btnDangKy.Size = new System.Drawing.Size(133, 21);
             this.btnDangKy.TabIndex = 3;
@@ -242,7 +242,7 @@
             this.cbbNamHoc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.cbbNamHoc.FormattingEnabled = true;
             this.cbbNamHoc.Location = new System.Drawing.Point(183, 4);
-            this.cbbNamHoc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbbNamHoc.Margin = new System.Windows.Forms.Padding(4);
             this.cbbNamHoc.Name = "cbbNamHoc";
             this.cbbNamHoc.Size = new System.Drawing.Size(171, 24);
             this.cbbNamHoc.TabIndex = 6;
@@ -268,7 +268,7 @@
             "HK2",
             "HKP"});
             this.cbbHocKy.Location = new System.Drawing.Point(183, 33);
-            this.cbbHocKy.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbbHocKy.Margin = new System.Windows.Forms.Padding(4);
             this.cbbHocKy.Name = "cbbHocKy";
             this.cbbHocKy.Size = new System.Drawing.Size(171, 24);
             this.cbbHocKy.TabIndex = 2;
@@ -301,7 +301,7 @@
             this.cbbGV.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.cbbGV.FormattingEnabled = true;
             this.cbbGV.Location = new System.Drawing.Point(183, 91);
-            this.cbbGV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbbGV.Margin = new System.Windows.Forms.Padding(4);
             this.cbbGV.Name = "cbbGV";
             this.cbbGV.Size = new System.Drawing.Size(171, 24);
             this.cbbGV.TabIndex = 2;
@@ -312,7 +312,7 @@
             this.cbbMonHoc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.cbbMonHoc.FormattingEnabled = true;
             this.cbbMonHoc.Location = new System.Drawing.Point(183, 62);
-            this.cbbMonHoc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbbMonHoc.Margin = new System.Windows.Forms.Padding(4);
             this.cbbMonHoc.Name = "cbbMonHoc";
             this.cbbMonHoc.Size = new System.Drawing.Size(171, 24);
             this.cbbMonHoc.TabIndex = 2;
@@ -333,10 +333,10 @@
             // 
             this.txtSoTiet.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSoTiet.Location = new System.Drawing.Point(541, 62);
-            this.txtSoTiet.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSoTiet.Margin = new System.Windows.Forms.Padding(4);
             this.txtSoTiet.MaximumSize = new System.Drawing.Size(265, 20);
             this.txtSoTiet.Name = "txtSoTiet";
-            this.txtSoTiet.Size = new System.Drawing.Size(174, 20);
+            this.txtSoTiet.Size = new System.Drawing.Size(174, 22);
             this.txtSoTiet.TabIndex = 1;
             // 
             // label14
@@ -354,10 +354,10 @@
             // 
             this.txtSoTC.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSoTC.Location = new System.Drawing.Point(541, 91);
-            this.txtSoTC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSoTC.Margin = new System.Windows.Forms.Padding(4);
             this.txtSoTC.MaximumSize = new System.Drawing.Size(265, 20);
             this.txtSoTC.Name = "txtSoTC";
-            this.txtSoTC.Size = new System.Drawing.Size(174, 20);
+            this.txtSoTC.Size = new System.Drawing.Size(174, 22);
             this.txtSoTC.TabIndex = 1;
             // 
             // label15
@@ -375,10 +375,10 @@
             // 
             this.txtMaLop.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtMaLop.Location = new System.Drawing.Point(541, 120);
-            this.txtMaLop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMaLop.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaLop.MaximumSize = new System.Drawing.Size(265, 20);
             this.txtMaLop.Name = "txtMaLop";
-            this.txtMaLop.Size = new System.Drawing.Size(174, 20);
+            this.txtMaLop.Size = new System.Drawing.Size(174, 22);
             this.txtMaLop.TabIndex = 1;
             // 
             // label1
@@ -399,7 +399,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Red;
             this.pictureBox1.Location = new System.Drawing.Point(690, 4);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(41, 25);
             this.pictureBox1.TabIndex = 1;
@@ -411,9 +411,9 @@
             this.groupBox1.Controls.Add(this.tableLayoutPanel2);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.Location = new System.Drawing.Point(4, 37);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(727, 190);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
@@ -438,7 +438,7 @@
             this.tableLayoutPanel2.Controls.Add(this.txtHeSoMG, 3, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(4, 19);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 4;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
@@ -507,7 +507,7 @@
             // 
             this.txtHoTen.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtHoTen.Location = new System.Drawing.Point(183, 9);
-            this.txtHoTen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtHoTen.Margin = new System.Windows.Forms.Padding(4);
             this.txtHoTen.MaximumSize = new System.Drawing.Size(265, 20);
             this.txtHoTen.Name = "txtHoTen";
             this.txtHoTen.Size = new System.Drawing.Size(171, 20);
@@ -517,7 +517,7 @@
             // 
             this.txtLop.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtLop.Location = new System.Drawing.Point(183, 50);
-            this.txtLop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtLop.Margin = new System.Windows.Forms.Padding(4);
             this.txtLop.MaximumSize = new System.Drawing.Size(265, 20);
             this.txtLop.Name = "txtLop";
             this.txtLop.Size = new System.Drawing.Size(171, 20);
@@ -527,7 +527,7 @@
             // 
             this.txtKhoa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtKhoa.Location = new System.Drawing.Point(183, 91);
-            this.txtKhoa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtKhoa.Margin = new System.Windows.Forms.Padding(4);
             this.txtKhoa.MaximumSize = new System.Drawing.Size(265, 20);
             this.txtKhoa.Name = "txtKhoa";
             this.txtKhoa.Size = new System.Drawing.Size(171, 20);
@@ -537,7 +537,7 @@
             // 
             this.txtKhoaHoc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtKhoaHoc.Location = new System.Drawing.Point(183, 134);
-            this.txtKhoaHoc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtKhoaHoc.Margin = new System.Windows.Forms.Padding(4);
             this.txtKhoaHoc.MaximumSize = new System.Drawing.Size(265, 20);
             this.txtKhoaHoc.Name = "txtKhoaHoc";
             this.txtKhoaHoc.Size = new System.Drawing.Size(171, 20);
@@ -547,7 +547,7 @@
             // 
             this.txtHeSoMG.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtHeSoMG.Location = new System.Drawing.Point(541, 9);
-            this.txtHeSoMG.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtHeSoMG.Margin = new System.Windows.Forms.Padding(4);
             this.txtHeSoMG.MaximumSize = new System.Drawing.Size(265, 20);
             this.txtHeSoMG.Name = "txtHeSoMG";
             this.txtHeSoMG.Size = new System.Drawing.Size(174, 20);
@@ -559,9 +559,9 @@
             this.groupBox3.Controls.Add(this.dataGridView1);
             this.groupBox3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox3.Location = new System.Drawing.Point(4, 441);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox3.Size = new System.Drawing.Size(727, 184);
             this.groupBox3.TabIndex = 4;
             this.groupBox3.TabStop = false;
@@ -643,7 +643,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "DangKyMonHoc";
             this.Size = new System.Drawing.Size(735, 629);
             this.tableLayoutPanel1.ResumeLayout(false);
